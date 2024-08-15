@@ -1,0 +1,183 @@
+.frame {
+  width: 544px;
+  height: 900px;
+}
+
+.frame .group {
+  position: relative;
+  width: 358px;
+  height: 332px;
+  top: 284px;
+  left: 96px;
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--title-m-semibold-font-family);
+  font-weight: var(--title-m-semibold-font-weight);
+  color: var(--base-800);
+  font-size: var(--title-m-semibold-font-size);
+  letter-spacing: var(--title-m-semibold-letter-spacing);
+  line-height: var(--title-m-semibold-line-height);
+  white-space: nowrap;
+  font-style: var(--title-m-semibold-font-style);
+}
+
+.frame .do-you-already-have {
+  position: absolute;
+  top: 319px;
+  left: 94px;
+  font-family: "Ruda-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 13px;
+  white-space: nowrap;
+}
+
+.frame .span {
+  color: #79797f;
+  font-family: var(--text-XXS-regular-font-family);
+  font-style: var(--text-XXS-regular-font-style);
+  font-weight: var(--text-XXS-regular-font-weight);
+  letter-spacing: var(--text-XXS-regular-letter-spacing);
+  line-height: var(--text-XXS-regular-line-height);
+  font-size: var(--text-XXS-regular-font-size);
+}
+
+.frame .text-wrapper-2 {
+  font-family: var(--text-XXS-bold-font-family);
+  font-weight: var(--text-XXS-bold-font-weight);
+  color: #1d1c25;
+  font-style: var(--text-XXS-bold-font-style);
+  letter-spacing: var(--text-XXS-bold-letter-spacing);
+  line-height: var(--text-XXS-bold-line-height);
+  font-size: var(--text-XXS-bold-font-size);
+}
+
+.frame .div {
+  position: absolute;
+  width: 351px;
+  top: 42px;
+  left: 1px;
+  font-family: var(--text-m-regular-font-family);
+  font-weight: var(--text-m-regular-font-weight);
+  color: var(--base-500);
+  font-size: var(--text-m-regular-font-size);
+  letter-spacing: var(--text-m-regular-letter-spacing);
+  line-height: var(--text-m-regular-line-height);
+  font-style: var(--text-m-regular-font-style);
+}
+
+.frame .atom-outlined-button {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 95px;
+  left: 1px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--green-600);
+}
+
+.frame .text-button {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--text-s-bold-font-family);
+  font-weight: var(--text-s-bold-font-weight);
+  color: var(--green-600);
+  font-size: var(--text-s-bold-font-size);
+  letter-spacing: var(--text-s-bold-letter-spacing);
+  line-height: var(--text-s-bold-line-height);
+  white-space: nowrap;
+  font-style: var(--text-s-bold-font-style);
+}
+
+.frame .atom-primary-button {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 246px;
+  left: 1px;
+  background-color: var(--green-500);
+  border-radius: 8px;
+}
+
+.frame .text-button-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--text-s-bold-font-family);
+  font-weight: var(--text-s-bold-font-weight);
+  color: #ffffff;
+  font-size: var(--text-s-bold-font-size);
+  letter-spacing: var(--text-s-bold-letter-spacing);
+  line-height: var(--text-s-bold-line-height);
+  white-space: nowrap;
+  font-style: var(--text-s-bold-font-style);
+}
+
+.frame .group-2 {
+  position: absolute;
+  width: 212px;
+  height: 13px;
+  top: 213px;
+  left: 71px;
+}
+
+.frame .vector {
+  left: 0;
+  position: absolute;
+  width: 84px;
+  height: 8px;
+  top: 2px;
+}
+
+.frame .img {
+  left: 126px;
+  position: absolute;
+  width: 84px;
+  height: 8px;
+  top: 2px;
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  font-family: var(--text-XXS-regular-font-family);
+  font-weight: var(--text-XXS-regular-font-weight);
+  color: var(--base-500);
+  font-size: var(--text-XXS-regular-font-size);
+  letter-spacing: var(--text-XXS-regular-letter-spacing);
+  line-height: var(--text-XXS-regular-line-height);
+  white-space: nowrap;
+  font-style: var(--text-XXS-regular-font-style);
+}
+
+.frame .atom-outlined-button-2 {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px 24px;
+  position: absolute;
+  top: 152px;
+  left: 1px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--green-600);
+}
