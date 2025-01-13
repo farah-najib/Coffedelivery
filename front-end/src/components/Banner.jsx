@@ -1,4 +1,4 @@
-import Partners from "./partners"
+
 import Arrow2 from '../assets/arrow2.png'
 import Coffeebeans from '../assets/coffee-beans.png'
 import Element from '../assets/element.png'
@@ -69,10 +69,7 @@ const Banner = () => {
                     <img className="group-10" src={Arrow2} />
 
 
-                   Our partners:
-                    <Partners />
-                    <Partners />
-                    <Partners />
+
                 </div>
 
 
