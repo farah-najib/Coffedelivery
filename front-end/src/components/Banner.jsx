@@ -53,6 +53,7 @@ const CoffeeBeans = styled.img`
     top: 64px;
     left: 0;
     object-fit: cover;
+    animation: float 6s ease-in-out infinite;
 `
 
 const CoffeeBeans2 = styled.img`
@@ -62,6 +63,26 @@ const CoffeeBeans2 = styled.img`
     top: 0;
     left: 248px;
     object-fit: cover;
+    animation: float-reverse 8s ease-in-out infinite;
+    @keyframes float {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes float-reverse {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(20px);
+        }
+    }
 `
 
 const Group6 = styled.div`
