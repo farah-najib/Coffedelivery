@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Search from '../assets/search.svg'
-
+import { useNavigate } from 'react-router-dom'
 const NavbarContainer = styled.nav`
     padding: 16px 159px;
     position: relative;
@@ -53,6 +53,11 @@ const CustomButton = styled.button`
 `
 
 const Navbar = () => {
+     const navigate = useNavigate() // Initialize navigate function
+
+     const handleSignInClick = () => {
+         navigate('/signin') // Navigate to the Sign In page
+     }
     return (
         <NavbarContainer className="navbar navbar-expand-lg">
             <div className="container">
@@ -100,7 +105,9 @@ const Navbar = () => {
                             alt="Search Icon"
                             style={{ width: '32px', height: '32px' }}
                         />
-                        <CustomButton>Search</CustomButton>
+                        <CustomButton onClick={handleSignInClick}>
+                            Search
+                        </CustomButton>
                     </div>
                 </div>
             </div>

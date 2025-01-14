@@ -5,7 +5,6 @@ const FooterWrapper = styled.footer`
     position: relative;
     width: 1441px;
     height: 533px;
-
     background-color: transparent;
 `
 
