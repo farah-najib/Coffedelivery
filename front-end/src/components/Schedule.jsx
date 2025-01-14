@@ -10,7 +10,7 @@ const WhereverYouAre2 = styled.div`
     background-color: aquamarine;
     position: relative;
     width: 1440px;
-  
+
     background-size: cover;
     background-position: 50% 50%;
 `
@@ -167,8 +167,8 @@ const Schedule = () => {
                 <Overlap9>
                     <DarkGreyTerrazzo>#schedule your order</DarkGreyTerrazzo>
                     <OverlapGroup6>
-                        <UnsplashLExpfwwoeg src="https://c.animaapp.com/EXuBewV4/img/unsplash-l-expfwwoeg.png" />
-                        <UnsplashFgknhwlmy src="https://c.animaapp.com/EXuBewV4/img/unsplash-f6gk6nhwlmy@2x.png" />
+                        <UnsplashLExpfwwoeg src={Gallary1} />
+                        <UnsplashFgknhwlmy src={Gallary3} />
                         <Group28>
                             <Group29>
                                 <GrabACupOfCoffee>
@@ -192,7 +192,7 @@ const Schedule = () => {
                         </Group28>
                         <TextWrapper33>#FRIENDS</TextWrapper33>
                         <TextWrapper34>#WORK</TextWrapper34>
-                        <Group30 src={"https://c.animaapp.com/EXuBewV4/img/group-51@2x.png"} />
+                        <Group30 src={Arrow4} />
                     </OverlapGroup6>
                 </Overlap9>
             </Group27>
