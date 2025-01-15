@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Logo from '../assets/logo1.png'
 import Search from '../assets/search.svg'
 import { useNavigate } from 'react-router-dom'
 const NavbarContainer = styled.nav`
@@ -6,38 +7,8 @@ const NavbarContainer = styled.nav`
     position: relative;
 `
 
-const BrandContainer = styled.div`
-    .overlap-group {
-        position: relative;
-        width: 63px;
-        height: 45px;
-    }
+const BrandContainer = styled.img`
 
-    .text-wrapper-4 {
-        position: absolute;
-        width: 53px;
-        top: 0;
-        left: 5px;
-        font-family: 'Dancing Script', Helvetica;
-        font-weight: 700;
-        color: var(--green-600);
-        font-size: 23.5px;
-        letter-spacing: 0;
-        line-height: 30.6px;
-    }
-
-    .text-wrapper-5 {
-        position: absolute;
-        width: 63px;
-        top: 30px;
-        left: 0;
-        font-family: 'Halant', Helvetica;
-        font-weight: 300;
-        color: var(--basetitle);
-        font-size: 11.8px;
-        letter-spacing: 2.83px;
-        line-height: 15.3px;
-    }
 `
 
 const NavLinks = styled.div`
@@ -62,12 +33,7 @@ const Navbar = () => {
         <NavbarContainer className="navbar navbar-expand-lg">
             <div className="container">
                 <a href="#home" className="navbar-brand">
-                    <BrandContainer>
-                        <div className="overlap-group">
-                            <h1 className="text-wrapper-4">Coffee</h1>
-                            <h1 className="text-wrapper-5">Delivery</h1>
-                        </div>
-                    </BrandContainer>
+                    <BrandContainer src={Logo}/>
                 </a>
                 <button
                     className="navbar-toggler"
