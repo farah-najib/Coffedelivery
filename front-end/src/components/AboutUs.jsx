@@ -119,12 +119,10 @@ const Group21 = styled.div`
     left: 0;
 `
 
-const IconoirTwitter = styled.img`
+const IconbadgeCheck = styled.i`
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 9px;
-    left: 0;
 `
 
 const TextWrapper24 = styled.p`
@@ -192,7 +190,8 @@ const Aboutus = () => {
                             high-quality coffee and excellent service.
                         </TextWrapper23>
                         <Group21>
-                            <IconoirTwitter src={Badget} />
+                            <IconbadgeCheck className="fi fi-rs-badge-check" />
+
                             <TextWrapper24>
                                 Lorem ipsum dolor sit amet consectetur. Tortor
                                 non

@@ -1,6 +1,3 @@
-import Calender from '../assets/calendar.svg'
-import Shop from '../assets/shop.svg'
-import DeliveryTruck from '../assets/delivery-truck.svg'
 import styled from 'styled-components'
 const OurServices = styled.div`
     position: relative;
@@ -109,12 +106,13 @@ const ButtonText = styled.div`
     font-style: var(--text-s-bold-font-style);
 `
 
-const Image = styled.img`
+const Image = styled.i`
     position: absolute;
     width: 32px;
     height: 32px;
     top: 16px;
     left: 16px;
+    background:pink;
 `
 
 
@@ -253,7 +251,7 @@ const Services = () => {
                         <Button>
                             <ButtonText>Schedule our service</ButtonText>
                         </Button>
-                        <Image src={Calender} />
+                        <Image className="fi fi-rr-calendar-day" />
                     </OverlapGroup>
                 </Group58>
 
@@ -267,7 +265,7 @@ const Services = () => {
                         <Button>
                             <ButtonText>Find a store near you</ButtonText>
                         </Button>
-                        <Image src={Shop} />
+                        <Image className="fi fi-rs-shop" />
                     </OverlapGroup>
                 </Group59>
 
@@ -281,7 +279,7 @@ const Services = () => {
                         <Button>
                             <ButtonText>Order coffee now</ButtonText>
                         </Button>
-                        <Image src={DeliveryTruck} />
+                        <Image className="fi fi-rs-shipping-fast" />
                     </OverlapGroup>
                 </Group60>
             </Group57>
