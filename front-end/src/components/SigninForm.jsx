@@ -1,4 +1,3 @@
-
 import styled from 'styled-components'
 
 const Frame = styled.div`
@@ -185,7 +184,7 @@ const AtomOutlinedButton2 = styled.div`
     border-color: var(--green-600);
 `
 
- const SignIn= () => {
+const SignIn = () => {
     return (
         <Frame>
             <Group>

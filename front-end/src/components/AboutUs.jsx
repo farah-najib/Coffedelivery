@@ -1,16 +1,10 @@
 import Gallary2 from '../assets/gallary2.png'
 import Gallary4 from '../assets/gallary4.png'
 import Gallary6 from '../assets/gallary6.png'
-import Badget from '../assets/badget.svg'
 import styled from 'styled-components'
 
 
-
-
-
 const WhereverYouAre = styled.div`
-
-
     background-color: #ba2d0b;
     background-size: cover;
     background-position: 50% 50%;

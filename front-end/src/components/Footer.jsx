@@ -143,20 +143,22 @@ const TextWrapper51 = styled.div`
     font-style: var(--text-s-regular-font-style);
 `
 
-const IconoirInstagram2 = styled.img`
+const IconoirInstagram = styled.i`
     position: absolute;
     width: 32px;
     height: 32px;
     top: 225px;
     left: 0;
+    background: white;
 `
 
-const IconoirTiktok = styled.img`
+const IconoirTiktok = styled.i`
     position: absolute;
     width: 32px;
     height: 32px;
     top: 225px;
     left: 48px;
+    background:white;
 `
 
 const Group65 = styled.div`
@@ -175,20 +177,15 @@ const OverlapGroup8 = styled.div`
     left: 3px;
 `
 
-const Vector2 = styled.img`
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    top: 7px;
-    left: 11px;
-`
 
-const Vector3 = styled.img`
+
+const Vector3 = styled.i`
     position: absolute;
     width: 27px;
     height: 19px;
     top: 0;
     left: 0;
+    background: white;
 `
 
 const TextWrapper52 = styled.div`
@@ -213,61 +210,12 @@ const Group66 = styled.div`
     left: 482px;
 `
 
-const TextWrapper53 = styled.div`
-    top: 31px;
-    position: absolute;
-    left: 0;
-    font-family: var(--text-l-regular-font-family);
-    font-weight: var(--text-l-regular-font-weight);
-    color: var(--base-200);
-    font-size: var(--text-l-regular-font-size);
-    letter-spacing: var(--text-l-regular-letter-spacing);
-    line-height: var(--text-l-regular-line-height);
-    white-space: nowrap;
-    font-style: var(--text-l-regular-font-style);
-`
 
-const TextWrapper54 = styled.div`
-    top: 65px;
-    position: absolute;
-    left: 0;
-    font-family: var(--text-l-regular-font-family);
-    font-weight: var(--text-l-regular-font-weight);
-    color: var(--base-200);
-    font-size: var(--text-l-regular-font-size);
-    letter-spacing: var(--text-l-regular-letter-spacing);
-    line-height: var(--text-l-regular-line-height);
-    white-space: nowrap;
-    font-style: var(--text-l-regular-font-style);
-`
 
-const TextWrapper55 = styled.div`
-    position: absolute;
-    top: 99px;
-    left: 0;
-    font-family: var(--text-l-regular-font-family);
-    font-weight: var(--text-l-regular-font-weight);
-    color: var(--base-200);
-    font-size: var(--text-l-regular-font-size);
-    letter-spacing: var(--text-l-regular-letter-spacing);
-    line-height: var(--text-l-regular-line-height);
-    white-space: nowrap;
-    font-style: var(--text-l-regular-font-style);
-`
 
-const TextWrapper56 = styled.div`
-    top: 0;
-    position: absolute;
-    left: 0;
-    font-family: var(--text-l-regular-font-family);
-    font-weight: var(--text-l-regular-font-weight);
-    color: var(--base-200);
-    font-size: var(--text-l-regular-font-size);
-    letter-spacing: var(--text-l-regular-letter-spacing);
-    line-height: var(--text-l-regular-line-height);
-    white-space: nowrap;
-    font-style: var(--text-l-regular-font-style);
-`
+
+
+
 
 const Group67 = styled.div`
     position: absolute;
@@ -381,14 +329,15 @@ const Footer = () => {
                         <Group63>
                             <Group64>
                                 <TextWrapper51>Follow us</TextWrapper51>
-                                <IconoirInstagram2 src="instagram-icon.png" />
-                                <IconoirTiktok src="tiktok-icon.png" />
+                                <IconoirInstagram className="fi fi-brands-instagram" />
+                                <IconoirTiktok className="fi fi-brands-tik-tok" />
+
                             </Group64>
                         </Group63>
                         <Group65>
                             <OverlapGroup8>
-                                <Vector2 src="vector2.png" />
-                                <Vector3 src="vector3.png" />
+                           
+                                <Vector3 className="fi fi-brands-youtube" />
                             </OverlapGroup8>
                         </Group65>
                     </Group62>

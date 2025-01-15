@@ -1,3 +1,5 @@
+import CoffeeCup from '../assets/coffeecup.png'
+import CoffeeBag from '../assets/coffeebag.png'
 import styled from 'styled-components'
 const OurServices = styled.div`
     position: relative;
@@ -206,34 +208,37 @@ const Group69 = styled.img`
     left: 0;
 `
 
-const Group70 = styled.div`
+
+
+const CupBagImg = styled.div`
     position: absolute;
     width: 243px;
     height: 283px;
     top: -21px;
     left: 13px;
+
 `
 
-const OverlapGroup9 = styled.div`
-    position: relative;
-    height: 283px;
-`
-
-const VectaryTexture = styled.img`
+const Bag = styled.div`
     position: absolute;
     width: 144px;
     height: 283px;
     top: 0;
     left: 0;
+    background: url(${CoffeeBag}) no-repeat center;
+    background-size: cover;
 `
 
-const VectaryTexture2 = styled.img`
+const Cup = styled.div`
     position: absolute;
     width: 126px;
     height: 190px;
+    background: url(${CoffeeCup}) no-repeat center;
+    background-size: cover;
     top: 93px;
     left: 117px;
 `
+
 
 const Services = () => {
     return (
@@ -299,12 +304,12 @@ const Services = () => {
                     </UpgradeYourCoffee>
                     <Group69 src="https://c.animaapp.com/EXuBewV4/img/group-51-1@2x.png" />
                 </Overlap13>
-                <Group70>
-                    <OverlapGroup9>
-                        <VectaryTexture src="https://c.animaapp.com/EXuBewV4/img/vectary-texture@2x.png" />
-                        <VectaryTexture2 src="https://c.animaapp.com/EXuBewV4/img/vectary-texture-1@2x.png" />
-                    </OverlapGroup9>
-                </Group70>
+                <CupBagImg>
+
+                        <Bag />
+                        <Cup />
+
+                </CupBagImg>
             </CheckOurProducts>
         </OurServices>
     )
