@@ -72,7 +72,7 @@ const Navbar = () => {
                             style={{ width: '32px', height: '32px' }}
                         />
                         <CustomButton onClick={handleSignInClick}>
-                            Search
+                            Sign in
                         </CustomButton>
                     </div>
                 </div>
