@@ -1,4 +1,8 @@
 import styled from 'styled-components'
+import Instagram1 from '../assets/instagram/instagram1.png'
+import Instagram2 from '../assets/instagram/instagram2.png'
+import Instagram3 from '../assets/instagram/instagram3.png'
+import Instagram4 from '../assets/instagram/instagram4.png'
 const Instagram = styled.div`
     position: relative;
     width: 1440px;
@@ -28,12 +32,13 @@ const IconoirInstagramWrapper = styled.div`
     height: 254px;
     top: 0;
     left: 288px;
-    background-image: url(https://c.animaapp.com/EXuBewV4/img/unsplash-olo8qpj1fja-1@2x.png);
+    background-image: url(${Instagram4});
     background-size: cover;
+
     background-position: 50% 50%;
 `
 
-const IconoirInstagram = styled.img`
+const IconoirInstagram = styled.i`
     position: absolute;
     width: 108px;
     height: 108px;
@@ -43,42 +48,19 @@ const IconoirInstagram = styled.img`
 const InstaComp = () => {
     return (
         <>
-          
-
             <Instagram>
                 <Group56>
-                    <UnsplashImage src="https://c.animaapp.com/EXuBewV4/img/unsplash-c5jxeqjbzu4@2x.png" />
-                    <UnsplashImage
-                        src="https://c.animaapp.com/EXuBewV4/img/unsplash-c5jxeqjbzu4-1@2x.png"
-                        top="286px"
-                    />
-                    <UnsplashImage
-                        src="https://c.animaapp.com/EXuBewV4/img/unsplash-olo8qpj1fja@2x.png"
-                        top="286px"
-                        left="288px"
-                    />
-                    <UnsplashImage
-                        src="https://c.animaapp.com/EXuBewV4/img/unsplash-qj8n1w8eivu@2x.png"
-                        top="0"
-                        left="574px"
-                    />
-                    <UnsplashImage
-                        src="https://c.animaapp.com/EXuBewV4/img/unsplash-qj8n1w8eivu-1@2x.png"
-                        top="286px"
-                        left="574px"
-                    />
-                    <UnsplashImage
-                        src="https://c.animaapp.com/EXuBewV4/img/unsplash-kwdp-0pok-i@2x.png"
-                        top="0"
-                        left="866px"
-                    />
-                    <UnsplashImage
-                        src="https://c.animaapp.com/EXuBewV4/img/unsplash-kwdp-0pok-i-1@2x.png"
-                        top="286px"
-                        left="866px"
-                    />
+                    <UnsplashImage src={Instagram1} />
+                    <UnsplashImage src={Instagram1} top="286px" />
+                    <UnsplashImage src={Instagram2} top="286px" left="288px" />
+                    <UnsplashImage src={Instagram3} top="0" left="574px" />
+                    <UnsplashImage src={Instagram3} top="286px" left="574px" />
+                    <UnsplashImage src={Instagram4} top="0" left="866px" />
+                    <UnsplashImage src={Instagram4} top="286px" left="866px" />
                     <IconoirInstagramWrapper>
-                        <IconoirInstagram src="https://c.animaapp.com/EXuBewV4/img/iconoir-instagram-2.svg" />
+                        <IconoirInstagram
+                            className='fi fi-brands-instagram'
+                        />
                     </IconoirInstagramWrapper>
                 </Group56>
             </Instagram>
