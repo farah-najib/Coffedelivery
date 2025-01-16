@@ -2,8 +2,14 @@ import styled from 'styled-components'
 import Logo from '../assets/logo1.png'
 import { useNavigate } from 'react-router-dom'
 const NavbarContainer = styled.nav`
-    padding: 16px 159px;
-    position: relative;
+    // padding: 16px 159px;
+
+    overflow: hidden;
+    background-color: #fff;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1000; /* or a higher value */
 `
 
 const BrandContainer = styled.img`

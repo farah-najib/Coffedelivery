@@ -10,59 +10,42 @@ import ElementImg3 from '../assets/element3.png'
 const BannerContainer = styled.div`
     background-color: #f1dedc;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
-    height: 100vh; /* Full viewport height */
-    // overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
 `
-const Overlap2 = styled.div`
+const BannerFooter = styled.footer`
     position: absolute;
-
-
-    left: 0;
+    bottom: 0; /* Position the footer at the bottom of the container */
+    width: 100%;
 `
 
-const OverlapWrapper = styled.div`
-    position: absolute;
-    width: 1440px;
+const CoffeeBean = styled.div`
+    width: 100%;
     height: 241px;
-    top: 109px;
-    left: 0;
+    display: flex;
+    // background-color:yellow;
 `
-
-const OverlapGroup2 = styled.div`
-    position: relative;
-    height: 241px;
-`
-
-const DivWrapper = styled.div`
-    position: absolute;
+const Cloumn1 = styled.div`
     width: 547px;
     height: 241px;
-    top: 0;
-    left: 0;
+    display:flex;
 `
-
-const CoffeeBeans = styled.img`
-    position: absolute;
+const CoffeeBeanImg = styled.div`
+    position: relative;
     width: 299px;
     height: 176px;
-    top: 64px;
-    left: 0;
-    object-fit: cover;
+    background: url(${Coffeebeans});
+    background-size: cover;
     animation: float 6s ease-in-out infinite;
 `
-
-const CoffeeBeans2 = styled.img`
-    position: absolute;
+const CoffeeBeanImg2 = styled.div`
+    position: relative;
     width: 299px;
     height: 176px;
-    top: 0;
-    left: 248px;
-    object-fit: cover;
+    background: url(${Coffeebeans});
+    background-size: cover;
+
     animation: float-reverse 8s ease-in-out infinite;
     @keyframes float {
         0%,
@@ -84,24 +67,27 @@ const CoffeeBeans2 = styled.img`
         }
     }
 `
-
-const Group6 = styled.div`
-    position: absolute;
+const Cloumn2 = styled.div`
     width: 547px;
     height: 241px;
-    top: 0;
-    left: 474px;
+    display: flex;
 `
-
-const Group7 = styled.div`
-    position: absolute;
+const Cloumn3 = styled.div`
     width: 547px;
     height: 241px;
-    top: 0;
-    left: 893px;
+    display: flex;
+
 `
 
-const Group8 = styled.img`
+const Cup = styled.div`
+    position: absolute;
+    top: -50%;
+    z-index: 500;
+    padding: 10px;
+
+`
+
+const Latte = styled.div`
     position: absolute;
     width: 315px;
     height: 315px;
@@ -109,43 +95,48 @@ const Group8 = styled.img`
     left: 547px;
     background-size: cover;
     background-position: 50% 50%;
+    background: url(${ElementImg3});
+    background-size: cover;
 `
 
-const Element = styled.img`
+const Americano = styled.div`
     position: absolute;
     width: 200px;
     height: 200px;
     top: 0;
     left: 331px;
-    object-fit: cover;
+    background:url(${ElementImg2});
+    background-size: cover;
 `
 
-const Element2 = styled.img`
+const Cappuccino = styled.div`
     position: absolute;
     width: 200px;
     height: 200px;
-    top: 12px;
+    top: 0;
     left: 884px;
     object-fit: cover;
+    background: url(${ElementImg});
+    background-size: cover;
 `
 
 
 
-const Overlap3 = styled.div`
+const Content = styled.div`
     position: absolute;
-    width: 1141px;
-    height: 245px;
-    top: 162px;
-    left: 237px;
-
+    width: 927px;
+    height: 234px;
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 150px;
+    //background-color: yellow;
 `
 
 const LeftText = styled.div`
     position: absolute;
     width: 927px;
     height: 234px;
-    top: 0;
-    left: 19px;
+
 `
 
 const Frame2 = styled.div`
@@ -166,11 +157,8 @@ const Title = styled.div`
 const CravingThePerfect = styled.p`
     position: absolute;
     width: 927px;
-    top: -1px;
-    left: 0;
     font-family: 'Halant', Helvetica;
     font-weight: 700;
-    // color: transparent;
     font-size: 48px;
     text-align: center;
     letter-spacing: 0;
@@ -188,8 +176,7 @@ const TextWrapper3 = styled.span`
 const TextWrapper4 = styled.p`
     position: absolute;
     width: 527px;
-    top: 123px;
-    left: 200px;
+
     font-family: var(--text-l-regular-font-family);
     font-weight: var(--text-l-regular-font-weight);
     color: var(--base-600);
@@ -240,18 +227,22 @@ const TextButton = styled.div`
     font-style: var(--text-s-bold-font-style);
 `
 
-const Group9 = styled.img`
+const Arrow1 = styled.div`
     position: absolute;
     width: 336px;
     height: 95px;
+    background :url(${ArrowImg1});
+    background-size:cover;
     top: 81px;
     left: 805px;
 `
 
-const Group10 = styled.img`
+const Arrow2 = styled.div`
     position: absolute;
     width: 95px;
     height: 228px;
+     background :url(${ArrowImg2});
+    background-size:cover;
     top: 17px;
     left: 0;
 `
@@ -259,7 +250,7 @@ const Group10 = styled.img`
 const Banner = () => {
     return (
         <BannerContainer>
-            <Overlap3>
+            <Content>
                 <LeftText>
                     <Frame2>
                         <Title>
@@ -282,38 +273,31 @@ const Banner = () => {
                         </AtomPrimaryButton>
                     </Frame2>
                 </LeftText>
-                <Group9 src={ArrowImg1} />
-                <Group10 src={ArrowImg2} />
-            </Overlap3>
+                <Arrow1 />
+                <Arrow2 />
+            </Content>
 
-            <Overlap2>
-                <OverlapWrapper>
-                    <OverlapGroup2>
-                        <DivWrapper>
-                            <OverlapGroup2>
-                                <CoffeeBeans src={Coffeebeans} />
-                                <CoffeeBeans2 src={Coffeebeans} />
-                            </OverlapGroup2>
-                        </DivWrapper>
-                        <Group6>
-                            <OverlapGroup2>
-                                <CoffeeBeans src={Coffeebeans} />
-                                <CoffeeBeans2 src={Coffeebeans} />
-                            </OverlapGroup2>
-                        </Group6>
-                        <Group7>
-                            <OverlapGroup2>
-                                <CoffeeBeans src={Coffeebeans} />
-                                <CoffeeBeans2 src={Coffeebeans} />
-                            </OverlapGroup2>
-                        </Group7>
-                    </OverlapGroup2>
-                </OverlapWrapper>
-
-                <Group8 src={ElementImg3} />
-                <Element src={ElementImg2} />
-                <Element2 src={ElementImg} />
-            </Overlap2>
+            <BannerFooter>
+                <CoffeeBean>
+                    <Cloumn1>
+                        <CoffeeBeanImg />
+                        <CoffeeBeanImg2 />
+                    </Cloumn1>
+                    <Cloumn2>
+                        <CoffeeBeanImg />
+                        <CoffeeBeanImg2 />
+                    </Cloumn2>
+                    <Cloumn3>
+                        <CoffeeBeanImg />
+                        <CoffeeBeanImg2 />
+                    </Cloumn3>
+                </CoffeeBean>
+                <Cup>
+                    <Latte />
+                    <Americano />
+                    <Cappuccino />
+                </Cup>
+            </BannerFooter>
         </BannerContainer>
     )
 }
