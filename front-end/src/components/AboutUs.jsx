@@ -1,6 +1,6 @@
-import Gallary2 from '../assets/gallary2.png'
-import Gallary4 from '../assets/gallary4.png'
-import Gallary6 from '../assets/gallary6.png'
+import Gallary2 from '../assets/gallary/gallary2.png'
+import Gallary4 from '../assets/gallary/gallary4.png'
+import Gallary6 from '../assets/gallary/gallary6.png'
 import styled from 'styled-components'
 
 
