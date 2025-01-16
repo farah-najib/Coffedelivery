@@ -1,6 +1,7 @@
 
 
 import styled from 'styled-components'
+import ProductPlaceholder from '../assets/product-placeholder.png'
 
 const OurProducts = styled.div`
     position: relative;
@@ -70,15 +71,7 @@ const TextWrapper43 = styled.div`
     font-style: var(--title-s-semibold-font-style);
 `
 
-const ElementFlatWrapper = styled.div`
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 0;
-    left: 0;
-    background-image: url(https://c.animaapp.com/EXuBewV4/img/rectangle-68-2.svg);
-    background-size: 100% 100%;
-`
+
 
 const ElementFlat = styled.img`
     position: absolute;
@@ -108,9 +101,6 @@ const TextWrapper44 = styled.p`
 const Products = () => {
     return (
         <>
-
-
-
             <OurProducts>
                 <DarkGreyTerrazzoWrapper>
                     <DarkGreyTerrazzo2>#Our products</DarkGreyTerrazzo2>
@@ -118,89 +108,19 @@ const Products = () => {
                 <Group46>
                     <TextWrapper42>Expresso coffee</TextWrapper42>
                     <TextWrapper43>$9.99</TextWrapper43>
-                    <ElementFlatWrapper>
-                        <ElementFlat
-                            src="https://c.animaapp.com/EXuBewV4/img/2-flat-7@2x.png"
-                            alt="Expresso coffee"
-                        />
-                    </ElementFlatWrapper>
-                    <TextWrapper44>
-                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
-                        velit imperdiet cras cras in
-                    </TextWrapper44>
-                </Group46>
-                <Group46>
-                    <TextWrapper42>Expresso coffee</TextWrapper42>
-                    <TextWrapper43>$9.99</TextWrapper43>
-                    <ElementFlatWrapper>
-                        <ElementFlat
-                            src="https://c.animaapp.com/EXuBewV4/img/2-flat-7@2x.png"
-                            alt="Expresso coffee"
-                        />
-                    </ElementFlatWrapper>
-                    <TextWrapper44>
-                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
-                        velit imperdiet cras cras in
-                    </TextWrapper44>
-                </Group46>
-                <Group46>
-                    <TextWrapper42>Expresso coffee</TextWrapper42>
-                    <TextWrapper43>$9.99</TextWrapper43>
-                    <ElementFlatWrapper>
-                        <ElementFlat
-                            src="https://c.animaapp.com/EXuBewV4/img/2-flat-7@2x.png"
-                            alt="Expresso coffee"
-                        />
-                    </ElementFlatWrapper>
-                    <TextWrapper44>
-                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
-                        velit imperdiet cras cras in
-                    </TextWrapper44>
-                </Group46>
-                <Group46>
-                    <TextWrapper42>Expresso coffee</TextWrapper42>
-                    <TextWrapper43>$9.99</TextWrapper43>
-                    <ElementFlatWrapper>
-                        <ElementFlat
-                            src="https://c.animaapp.com/EXuBewV4/img/2-flat-7@2x.png"
-                            alt="Expresso coffee"
-                        />
-                    </ElementFlatWrapper>
-                    <TextWrapper44>
-                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
-                        velit imperdiet cras cras in
-                    </TextWrapper44>
-                </Group46>
-                <Group46>
-                    <TextWrapper42>Expresso coffee</TextWrapper42>
-                    <TextWrapper43>$9.99</TextWrapper43>
-                    <ElementFlatWrapper>
-                        <ElementFlat
-                            src="https://c.animaapp.com/EXuBewV4/img/2-flat-7@2x.png"
-                            alt="Expresso coffee"
-                        />
-                    </ElementFlatWrapper>
-                    <TextWrapper44>
-                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
-                        velit imperdiet cras cras in
-                    </TextWrapper44>
-                </Group46>
-                <Group46>
-                    <TextWrapper42>Expresso coffee</TextWrapper42>
-                    <TextWrapper43>$9.99</TextWrapper43>
-                    <ElementFlatWrapper>
-                        <ElementFlat
-                            src="https://c.animaapp.com/EXuBewV4/img/2-flat-7@2x.png"
-                            alt="Expresso coffee"
-                        />
-                    </ElementFlatWrapper>
-                    <TextWrapper44>
-                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
-                        velit imperdiet cras cras in
-                    </TextWrapper44>
-                </Group46>
-            </OurProducts>
 
+                        <ElementFlat
+                            src={ProductPlaceholder}
+                            alt="Expresso coffee"
+                        />
+
+                    <TextWrapper44>
+                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
+                        velit imperdiet cras cras in
+                    </TextWrapper44>
+                </Group46>
+                
+            </OurProducts>
         </>
     )
 }
