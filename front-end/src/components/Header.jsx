@@ -5,11 +5,11 @@ const NavbarContainer = styled.nav`
     // padding: 16px 159px;
 
     overflow: hidden;
-    background-color: #fff;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 1000; /* or a higher value */
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 `
 
 const BrandContainer = styled.img`

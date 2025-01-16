@@ -132,99 +132,18 @@ const Content = styled.div`
     //background-color: yellow;
 `
 
-const LeftText = styled.div`
-    position: absolute;
-    width: 927px;
-    height: 234px;
-
-`
-
-const Frame2 = styled.div`
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    position: relative;
-`
 
 const Title = styled.div`
-    position: relative;
-    width: 927px;
-    height: 176px;
+
 `
 
-const CravingThePerfect = styled.p`
-    position: absolute;
-    width: 927px;
-    font-family: 'Halant', Helvetica;
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 62.4px;
-`
+const Description = styled.p`
 
-const Span = styled.span`
-    color: green;
-`
-
-const TextWrapper3 = styled.span`
-    color: #ba2d0b;
-`
-
-const TextWrapper4 = styled.p`
-    position: absolute;
-    width: 527px;
-
-    font-family: var(--text-l-regular-font-family);
-    font-weight: var(--text-l-regular-font-weight);
-    color: var(--base-600);
-    font-size: var(--text-l-regular-font-size);
-    text-align: center;
-    letter-spacing: var(--text-l-regular-letter-spacing);
-    line-height: var(--text-l-regular-line-height);
-    font-style: var(--text-l-regular-font-style);
 `
 
 
+const Button = styled.div`
 
-const AtomPrimaryButton = styled.div`
-    // display: inline-flex;
-    // align-items: center;
-    // justify-content: center;
-    // gap: 10px;
-    // padding: 12px 24px;
-    // position: relative;
-    // background-color: var(--green-600);
-    // border-radius: 8px;
-
-    background-color: #556b2f;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-top: 20px;
-
-    &:hover {
-        background-color: #6b8e23;
-    }
-`
-
-const TextButton = styled.div`
-    color: #ffffff;
-    font-size: var(--text-s-bold-font-size);
-    line-height: var(--text-s-bold-line-height);
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: var(--text-s-bold-font-family);
-    font-weight: var(--text-s-bold-font-weight);
-    letter-spacing: var(--text-s-bold-letter-spacing);
-    white-space: nowrap;
-    font-style: var(--text-s-bold-font-style);
 `
 
 const Arrow1 = styled.div`
@@ -251,28 +170,21 @@ const Banner = () => {
     return (
         <BannerContainer>
             <Content>
-                <LeftText>
-                    <Frame2>
-                        <Title>
-                            <CravingThePerfect>
-                                <Span>Craving the perfect cup of coffee?</Span>
-                                <br />
-                                Our blends are{' '}
-                                <TextWrapper3>
-                                    lovely and delicious.
-                                </TextWrapper3>
-                            </CravingThePerfect>
-                            <TextWrapper4>
-                                With Coffee Delivery, you can have your coffee
-                                delivered to you wherever you are, at any time.
-                            </TextWrapper4>
-                        </Title>
 
-                        <AtomPrimaryButton>
-                            <TextButton>Order your coffee now</TextButton>
-                        </AtomPrimaryButton>
-                    </Frame2>
-                </LeftText>
+                <Title>
+                    Craving the perfect cup of coffee?
+                    Our blends are{' '}
+                    lovely and delicious.
+                </Title>
+                <Description>
+                    With Coffee Delivery, you can have your coffee delivered to
+                    you wherever you are, at any time.
+                </Description>
+
+
+                    <Button>Order your coffee now</Button>
+
+
                 <Arrow1 />
                 <Arrow2 />
             </Content>
