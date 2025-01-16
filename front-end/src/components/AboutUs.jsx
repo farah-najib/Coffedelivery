@@ -4,36 +4,20 @@ import Gallary6 from '../assets/gallary/gallary6.png'
 import styled from 'styled-components'
 
 
-const WhereverYouAre = styled.div`
+const Container = styled.div`
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     background-color: #ba2d0b;
     background-size: cover;
     background-position: 50% 50%;
-
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh; /* Full viewport height */
-    // overflow: hidden;
 `
 
-const Group17 = styled.div`
-    position: relative;
-    width: 1120px;
-    height: 518px;
-    top: 120px;
-    left: 160px;
-`
-
-const TextWrapper22 = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
+const ComponentTitle = styled.div`
+    padding: 20px;
     font-family: var(--title-m-semibold-font-family);
     font-weight: var(--title-m-semibold-font-weight);
-    color: var(--basewhite);
+    color: var(--base-900);
     font-size: var(--title-m-semibold-font-size);
     letter-spacing: var(--title-m-semibold-letter-spacing);
     line-height: var(--title-m-semibold-line-height);
@@ -41,89 +25,71 @@ const TextWrapper22 = styled.div`
     font-style: var(--title-m-semibold-font-style);
 `
 
-const Group18 = styled.div`
-    position: absolute;
+
+
+
+const Content = styled.div`
+    position: relative;
     width: 1118px;
     height: 367px;
-    top: 151px;
-    left: 0;
+    display: flex;
+    flex-direction: colunm;
 `
 
-const Group19 = styled.div`
-    position: absolute;
+const Gallary = styled.div`
     width: 463px;
     height: 367px;
-    top: 0;
-    left: 655px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    gap: 10px; /* Spacing between grid items */
 `
 
-const StyledImg = styled.img`
-    position: absolute;
+const Column2 = styled.div`
+  display: grid;
+  grid-template-rows: 1fr ; /* Two rows of equal height */
+  gap: 10px; /* Spacing between rows */
+`;
+
+const Photo = styled.img`
+    position: relative;
     object-fit: cover;
 
-    &.unsplash-vobvkmg-sta {
+    &.column1photo {
         width: 219px;
         height: 367px;
-        top: 0;
-        left: 0;
     }
 
-    &.unsplash {
+    &.column2row1 {
         width: 222px;
         height: 122px;
-        top: 0;
-        left: 241px;
     }
 
-    &.unsplash-zunspgdg {
+    &.column2row2 {
         width: 218px;
         height: 226px;
-        top: 141px;
-        left: 241px;
     }
 `
 
-const Group20 = styled.div`
-    position: absolute;
+const Description = styled.div`
+    position: relative;
     width: 548px;
     height: 367px;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
 `
 
-const TextWrapper23 = styled.p`
-    position: absolute;
-    width: 445px;
-    top: 58px;
-    left: 0;
-    font-family: var(--text-l-regular-font-family);
-    font-weight: var(--text-l-regular-font-weight);
-    color: var(--base-400);
-    font-size: var(--text-l-regular-font-size);
-    letter-spacing: var(--text-l-regular-letter-spacing);
-    line-height: var(--text-l-regular-line-height);
-    font-style: var(--text-l-regular-font-style);
-`
 
-const Group21 = styled.div`
-    position: absolute;
+const List = styled.div`
+    position: relative;
     width: 258px;
     height: 42px;
-    top: 267px;
-    left: 0;
 `
 
-const IconbadgeCheck = styled.i`
-    position: absolute;
-    width: 24px;
-    height: 24px;
-`
 
-const TextWrapper24 = styled.p`
-    position: absolute;
+
+const ListItem = styled.p`
+    position: relative;
     width: 224px;
-    top: 0;
-    left: 32px;
     font-family: var(--text-m-bold-font-family);
     font-weight: var(--text-m-bold-font-weight);
     color: #ffffff;
@@ -133,71 +99,48 @@ const TextWrapper24 = styled.p`
     font-style: var(--text-m-bold-font-style);
 `
 
-const AtomCTAButton = styled.div`
+const Button = styled.div`
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 10px 24px;
-    position: absolute;
-    top: 194px;
-    left: 0;
+    position: relative;
     background-color: var(--basewhite);
     border-radius: 8px;
 `
 
-const TextButton2 = styled.p`
-    position: relative;
-    width: fit-content;
-    margin-top: -1px;
-    font-family: 'Ruda', Helvetica;
-    font-weight: 700;
-    color: var(--blue-900);
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 20.8px;
-    white-space: nowrap;
-`
+
 
 const Aboutus = () => {
     return (
-        <WhereverYouAre>
-            <Group17>
-                <TextWrapper22>#About us</TextWrapper22>
-                <Group18>
-                    <Group19>
-                        <StyledImg
-                            className="unsplash-vobvkmg-sta"
-                            src={Gallary2}
-                        />
-                        <StyledImg className="unsplash" src={Gallary4} />
-                        <StyledImg
-                            className="unsplash-zunspgdg"
-                            src={Gallary6}
-                        />
-                    </Group19>
-                    <Group20>
-                        <TextWrapper22>Nature &amp; Love</TextWrapper22>
-                        <TextWrapper23>
-                            At our company, we strive to make your coffee time
-                            more enjoyable. Since 2020, we have been providing
-                            high-quality coffee and excellent service.
-                        </TextWrapper23>
-                        <Group21>
-                            <IconbadgeCheck className="fi fi-rs-badge-check" />
+        <Container>
+            <ComponentTitle>#About us</ComponentTitle>
+            <Content>
+                <Description>
+                    <p>
+                        Nature &amp; Love At our company, we strive to make your
+                        coffee time more enjoyable. Since 2020, we have been
+                        providing high-quality coffee and excellent service.
+                    </p>
 
-                            <TextWrapper24>
-                                Lorem ipsum dolor sit amet consectetur. Tortor
-                                non
-                            </TextWrapper24>
-                        </Group21>
-                        <AtomCTAButton>
-                            <TextButton2>FIND A STORE NEAR TO YOU</TextButton2>
-                        </AtomCTAButton>
-                    </Group20>
-                </Group18>
-            </Group17>
-        </WhereverYouAre>
+                    <List>
+                        <ListItem>
+                            Lorem ipsum dolor sit amet consectetur. Tortor non
+                        </ListItem>
+                    </List>
+                    <Button>FIND A STORE NEAR TO YOU</Button>
+                </Description>
+
+                <Gallary>
+                    <Photo className="column1photo" src={Gallary2} />
+                    <Column2>
+                        <Photo className="column2row1" src={Gallary4} />
+                        <Photo className="column2row2" src={Gallary6} />
+                    </Column2>
+                </Gallary>
+            </Content>
+        </Container>
     )
 }
 

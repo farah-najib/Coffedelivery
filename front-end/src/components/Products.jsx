@@ -5,16 +5,14 @@ import ProductPlaceholder from '../assets/product-placeholder.png'
 
 const OurProducts = styled.div`
     position: relative;
-    width: 1440px;
-    height: 634px;
+    width: 100vw;
+    height: 100vh;
     background-color: lightgrey;
     background-size: cover;
     background-position: 50% 50%;
 `
-const HeaderTile = styled.header`
+const ComponentTitle = styled.div`
     padding: 20px;
-
-
     font-family: var(--title-m-semibold-font-family);
     font-weight: var(--title-m-semibold-font-weight);
     color: var(--base-900);
@@ -24,7 +22,14 @@ const HeaderTile = styled.header`
     white-space: nowrap;
     font-style: var(--title-m-semibold-font-style);
 `
-
+const ProductList= styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    gap: 20px; /* Gap between grid items */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Optional max width */
+    margin: 0 auto; /* Center the grid horizontally */
+`
 
 
 const ProductItem = styled.div`
@@ -82,23 +87,21 @@ const Detail = styled.div`
 
 const Products = () => {
     return (
-        
-            <OurProducts>
-                <HeaderTile>#Our products</HeaderTile>
+        <OurProducts>
+            <ComponentTitle>#Our products</ComponentTitle>
 
-                <ProductItem>
-                    <Image src={ProductPlaceholder} alt="Expresso coffee" />
-                    <Description>
-                        <Name>Expresso coffee</Name>
-                        <Detail>
-                            Lorem ipsum dolor sit amet consectetur. Acondiment
-                            mi velit imperdiet cras cras in
-                        </Detail>
-                    </Description>
-                    <Price>$9.99</Price>
-                </ProductItem>
-            </OurProducts>
-
+            <ProductItem>
+                <Image src={ProductPlaceholder} alt="Expresso coffee" />
+                <Description>
+                    <Name>Expresso coffee</Name>
+                    <Detail>
+                        Lorem ipsum dolor sit amet consectetur. Acondiment mi
+                        velit imperdiet cras cras in
+                    </Detail>
+                </Description>
+                <Price>$9.99</Price>
+            </ProductItem>
+        </OurProducts>
     )
 }
 
