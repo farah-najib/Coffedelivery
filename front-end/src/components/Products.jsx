@@ -104,18 +104,13 @@ const TextWrapper44 = styled.p`
 `
 
 
-// -----------------------------------------------------
-
-
-
-
 
 const Products = () => {
     return (
         <>
 
 
-          
+
             <OurProducts>
                 <DarkGreyTerrazzoWrapper>
                     <DarkGreyTerrazzo2>#Our products</DarkGreyTerrazzo2>
