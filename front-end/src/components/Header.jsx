@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Logo from '../assets/logo1.png'
+import Logo from '../assets/logo-img/logo1.png'
 import { useNavigate } from 'react-router-dom'
 const NavbarContainer = styled.nav`
     // padding: 16px 159px;
