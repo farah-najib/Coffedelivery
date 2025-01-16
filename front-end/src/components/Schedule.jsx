@@ -1,6 +1,6 @@
-import Gallary1 from '../assets/gallary1.png'
-import Gallary3 from '../assets/gallary3.png'
-import Arrow4 from '../assets/arrow4.png'
+import Gallary1 from '../assets/gallary/gallary1.png'
+import Gallary3 from '../assets/gallary/gallary3.png'
+import Arrow4 from '../assets/vectors/arrow4.png'
 
 import styled from 'styled-components'
 
