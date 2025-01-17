@@ -5,7 +5,8 @@ const NavbarContainer = styled.nav`
     // padding: 16px 159px;
 
     overflow: hidden;
-   
+    //background-color: #fff;
+    //border-radius:50px;
     position: fixed;
     top: 0;
     width: 100%;

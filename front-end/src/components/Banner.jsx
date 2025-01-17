@@ -8,7 +8,6 @@ import ElementImg3 from '../assets/element3.png'
 
 
 const BannerContainer = styled.div`
-    background-color: #f1dedc;
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -82,7 +81,7 @@ const Cloumn3 = styled.div`
 const Cup = styled.div`
     position: absolute;
     top: -50%;
-    z-index: 500;
+
     padding: 10px;
 
 `

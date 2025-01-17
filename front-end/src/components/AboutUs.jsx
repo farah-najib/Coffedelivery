@@ -40,7 +40,7 @@ const Gallary = styled.div`
     width: 463px;
     height: 367px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-template-columns: 1fr 1fr;
     gap: 10px; /* Spacing between grid items */
 `
 
