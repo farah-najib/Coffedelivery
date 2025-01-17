@@ -42,12 +42,12 @@ const GridRow =styled.div`
       flex-direction:column;
       align-items: center;
       justify-content: center;
-
       color: white;
       font-size: 20px;
 
 `
-const StepDescription=styled.div``
+const StepDescription=styled.div`
+`
 
 
 const Column1 = styled.div`
@@ -64,9 +64,13 @@ const Column3 = styled.div`
     //background: green;
 
 `
-const ColdBeverageImg = styled.img`
+const ColdBeverageImg = styled.div`
     width: 191px;
     height: 374px;
+    background: url(${ColdBeverage});
+    // no-repeat center;
+    background-size: cover;
+
 `
 
 const column1Data = [
@@ -98,7 +102,7 @@ const Choice = () => {
                     </Column1>
                     <Column2>
                         <GridRow>
-                            <ColdBeverageImg src={ColdBeverage} />
+                            <ColdBeverageImg />
                         </GridRow>
                     </Column2>
                     <Column3>
