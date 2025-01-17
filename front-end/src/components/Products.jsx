@@ -28,7 +28,7 @@ const ProductList= styled.div`
     gap: 20px; /* Gap between grid items */
     width: 100%; /* Full width */
     max-width: 600px; /* Optional max width */
-    margin: 0 auto; /* Center the grid horizontally */
+   
 `
 
 
