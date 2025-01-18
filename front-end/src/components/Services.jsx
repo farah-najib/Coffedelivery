@@ -1,64 +1,68 @@
 import CoffeeCup from '../assets/coffeecup.png'
 import CoffeeBag from '../assets/coffeebag.png'
+import ArrowEight from '../assets/vectors/arrow8.png'
 import styled from 'styled-components'
 const OurServices = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
     width: 100vw;
     height: 100vh; /* Full viewport height */
     // overflow: hidden;
     background-color: palevioletred;
     background-size: cover;
     background-position: 50% 50%;
-`
 
-const Group57 = styled.div`
-    position: relative;
-    width: 1122px;
-    height: 370px;
 
 `
 
-const Group58 = styled.div`
-    position: absolute;
-    width: 356px;
-    height: 248px;
-    top: 122px;
-    left: 0;
+const ComponentTitle = styled.div`
+    padding: 20px;
+    font-family: var(--title-m-semibold-font-family);
+    font-weight: var(--title-m-semibold-font-weight);
+    color: var(--base-900);
+    font-size: var(--title-m-semibold-font-size);
+    letter-spacing: var(--title-m-semibold-letter-spacing);
+    line-height: var(--title-m-semibold-line-height);
+    white-space: nowrap;
+    font-style: var(--title-m-semibold-font-style);
+`
+const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 `
 
-const Group59 = styled.div`
-    position: absolute;
-    width: 356px;
-    height: 248px;
-    top: 122px;
-    left: 384px;
+const ListOfCard = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap:32px;
 `
-
-const Group60 = styled.div`
-    position: absolute;
-    width: 356px;
-    height: 248px;
-    top: 122px;
-    left: 768px;
-`
-
-const OverlapGroup = styled.div`
-    position: relative;
+const Card = styled.div`
     width: 352px;
     height: 248px;
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: var(--drop-2);
+    justify-content: center;
+    align-items: center;
+
+`
+
+const CardHeader = styled.i`
+    font-size: 56px;
+    color: #4e5b3e;
+    display: inline-block;
 `
 
 const Title = styled.div`
-    position: absolute;
-    top: 88px;
-    left: 127px;
+
     font-family: var(--title-s-semibold-font-family);
     font-weight: var(--title-s-semibold-font-weight);
     color: #000000;
@@ -70,10 +74,8 @@ const Title = styled.div`
 `
 
 const Description = styled.p`
-    position: absolute;
+
     width: 320px;
-    top: 127px;
-    left: 16px;
     font-family: var(--text-s-regular-font-family);
     font-weight: var(--text-s-regular-font-weight);
     color: var(--base-600);
@@ -85,92 +87,42 @@ const Description = styled.p`
 `
 
 const Button = styled.div`
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
     padding: 12px 24px;
-    position: absolute;
-    top: 179px;
-    left: 73px;
     border-radius: 8px;
     border: 1px solid var(--green-600);
 `
 
-const ButtonText = styled.div`
-    color: var(--green-600);
-    font-size: var(--text-s-bold-font-size);
-    line-height: var(--text-s-bold-line-height);
-    font-family: var(--text-s-bold-font-family);
-    font-weight: var(--text-s-bold-font-weight);
-    letter-spacing: var(--text-s-bold-letter-spacing);
-    white-space: nowrap;
-    font-style: var(--text-s-bold-font-style);
-`
-
-const Image = styled.i`
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 16px;
-    left: 16px;
-    background:pink;
-`
-
 
 const CheckOurProducts = styled.div`
-    position: relative;
-
     width: 1120px;
     height: 241px;
-    border: 1px solid;
-    border-color: #ffffff1a;
-    background-color: lightsalmon;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+    background-color: #1f2130;
+
+    color: #ffffff;
     background-size: 100% 100%;
 `
 
-const Overlap13 = styled.div`
-    position: absolute;
-    width: 816px;
-    height: 177px;
-    top: 32px;
-    left: 256px;
+const Column1 = styled.div`
+    height: 100%;
+    //background: blue;
+`
+const Column2 = styled.div`
+    height: 100%;
+    //background: rgb(175, 76, 149);
+`
+const Column3 = styled.div`
+    height: 100%;
+    // background: green;
 `
 
-const Group68 = styled.div`
-    position: absolute;
-    width: 565px;
-    height: 62px;
-    top: 0;
-    left: 227px;
-`
 
-const TextWrapper65 = styled.div`
-    width: 563px;
-    left: 0;
-    font-size: var(--title-XL-semibold-font-size);
-    line-height: var(--title-XL-semibold-line-height);
-    position: absolute;
-    top: 0;
-    font-family: var(--title-XL-semibold-font-family);
-    font-weight: var(--title-XL-semibold-font-weight);
-    color: #ffffff;
-    letter-spacing: var(--title-XL-semibold-letter-spacing);
-    font-style: var(--title-XL-semibold-font-style);
-`
 
-const AtomCTAButton3 = styled.div`
-    top: 136px;
-    left: 227px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px 24px;
-    position: absolute;
-    background-color: var(--basewhite);
-    border-radius: 8px;
-`
+
 
 const TextButton6 = styled.div`
     position: relative;
@@ -186,45 +138,24 @@ const TextButton6 = styled.div`
     font-style: var(--text-m-bold-font-style);
 `
 
-const UpgradeYourCoffee = styled.p`
-    position: absolute;
-    width: 589px;
-    top: 69px;
-    left: 227px;
-    font-family: var(--text-m-regular-font-family);
-    font-weight: var(--text-m-regular-font-weight);
-    color: #ffffff;
-    font-size: var(--text-m-regular-font-size);
-    letter-spacing: var(--text-m-regular-letter-spacing);
-    line-height: var(--text-m-regular-line-height);
-    font-style: var(--text-m-regular-font-style);
-`
 
-const Group69 = styled.img`
-    position: absolute;
+const ArrowImg = styled.div`
     width: 245px;
     height: 148px;
-    top: 2px;
-    left: 0;
+    background: url(${ArrowEight}) no-repeat center;
+    background-size: cover;
 `
 
-
-
 const CupBagImg = styled.div`
-    position: absolute;
+   // position: absolute;
     width: 243px;
     height: 283px;
-    top: -21px;
-    left: 13px;
-
 `
 
 const Bag = styled.div`
-    position: absolute;
+    //position: absolute;
     width: 144px;
     height: 283px;
-    top: 0;
-    left: 0;
     background: url(${CoffeeBag}) no-repeat center;
     background-size: cover;
 `
@@ -243,76 +174,65 @@ const Cup = styled.div`
 const Services = () => {
     return (
         <OurServices>
-            <Group57>
-                <div>#Our services</div>
-
-                <Group58>
-                    <OverlapGroup>
+            <ComponentTitle>#Our services</ComponentTitle>
+            <Content>
+                <ListOfCard>
+                    <Card>
+                        <CardHeader className="fi fi-rr-calendar-day" />
                         <Title>Schedule</Title>
                         <Description>
                             Planning an office party or a coffee break with
                             friends? Let us take care of everything.
                         </Description>
-                        <Button>
-                            <ButtonText>Schedule our service</ButtonText>
-                        </Button>
-                        <Image className="fi fi-rr-calendar-day" />
-                    </OverlapGroup>
-                </Group58>
+                        <Button>Schedule our service</Button>
+                    </Card>
 
-                <Group59>
-                    <OverlapGroup>
+                    <Card>
+                        <CardHeader className="fi fi-rs-shop" />
                         <Title>Stores</Title>
                         <Description>
                             Find the nearest one and come try a new experience
                             and taste for yourself.
                         </Description>
-                        <Button>
-                            <ButtonText>Find a store near you</ButtonText>
-                        </Button>
-                        <Image className="fi fi-rs-shop" />
-                    </OverlapGroup>
-                </Group59>
+                        <Button>Find a store near you</Button>
+                    </Card>
 
-                <Group60>
-                    <OverlapGroup>
+                    <Card>
+                        <CardHeader className="fi fi-rs-shipping-fast" />
                         <Title>Delivery</Title>
                         <Description>
                             With our platform, we can deliver coffee straight to
                             you, no matter where you are.
                         </Description>
-                        <Button>
-                            <ButtonText>Order coffee now</ButtonText>
-                        </Button>
-                        <Image className="fi fi-rs-shipping-fast" />
-                    </OverlapGroup>
-                </Group60>
-            </Group57>
+                        <Button>Order coffee now</Button>
+                    </Card>
+                </ListOfCard>
 
-            <CheckOurProducts>
-                <Overlap13>
-                    <Group68>
-                        <TextWrapper65>Upgrade your experience</TextWrapper65>
-                    </Group68>
-                    <AtomCTAButton3>
-                        <TextButton6>Try our fresh beans</TextButton6>
-                    </AtomCTAButton3>
-                    <UpgradeYourCoffee>
+                <CheckOurProducts>
+                    <Column1>
+                        <CupBagImg>
+                            <Bag />
+                            <Cup />
+                        </CupBagImg>
+                    </Column1>
+                    <Column2>
+                        <ArrowImg />
+                    </Column2>
+                    <Column3>
+                            Upgrade your experience
+
                         Upgrade your coffee experience. Try our fresh beans and
                         taste the rich, delicious flavour for yourself. You
                         won&#39;t be disappointed.
-                    </UpgradeYourCoffee>
-                    <Group69 src="https://c.animaapp.com/EXuBewV4/img/group-51-1@2x.png" />
-                </Overlap13>
-                <CupBagImg>
-
-                        <Bag />
-                        <Cup />
-
-                </CupBagImg>
-            </CheckOurProducts>
+                        <TextButton6>Try our fresh beans</TextButton6>
+                    </Column3>
+                </CheckOurProducts>
+            </Content>
         </OurServices>
     )
 }
 
 export default Services
+
+
+
