@@ -4,6 +4,7 @@ import ElementImg from '../assets/element.png'
 import ArrowFive from '../assets/vectors/arrow5.svg'
 import ArrowSex from '../assets/vectors/arrow6.png'
 import ArrowSeven from '../assets/vectors/arrow7.svg'
+import Square from '../assets/vectors/Square.svg'
 const HowItWorks = styled.div`
     position: relative;
     width: 100vw;
@@ -11,8 +12,9 @@ const HowItWorks = styled.div`
     background-color: #C8AAAA;
     background-size: cover;
     background-position: 50% 50%;
-    display:flex;
-    flex-direction:column;
+    // display:flex;
+    // flex-direction:column;
+    // justify-content:center;
 `
 
 const ComponentTitle = styled.div`
@@ -40,15 +42,15 @@ const Content = styled.div`
 `
 const Column1 = styled.div`
     height: 100%;
-    background: blue;
+    //background: blue;
 `
 const Column2 = styled.div`
     height: 100%;
-    background: rgb(175, 76, 149);
+    //background: rgb(175, 76, 149);
 `
 const Column3 = styled.div`
     height: 100%;
-    background: green;
+   // background: green;
 `
 const Item = styled.div`
 
@@ -57,12 +59,39 @@ const Item = styled.div`
     object-fit: cover;
     // display: flex;
     // flex-direction: row;
-    background:white;
+   // background:white;
     color: black;
     font-size: 20px;
 `
+const Card = styled.div`
+    background-color: var(--basewhite);
+    border-radius: 16px;
+    box-shadow: var(--drop-card);
+`
+const CardHeader = styled.div`
 
+`
+const CardTitle = styled.div`
+    width: 352px;
+    height: 196px;
+    font-family: var(--title-m-semibold-font-family);
+    font-weight: var(--title-m-semibold-font-weight);
+    color: var(--base-900);
+    font-size: var(--title-m-semibold-font-size);
+    letter-spacing: var(--title-m-semibold-letter-spacing);
+    line-height: var(--title-m-semibold-line-height);
+    font-style: var(--title-m-semibold-font-style);
+`
 
+const CardBody = styled.div`
+        font-family: var(--text-m-regular-font-family);
+        font-weight: var(--text-m-regular-font-weight);
+        color: var(--base-600);
+        font-size: var(--text-m-regular-font-size);
+        letter-spacing: var(--text-m-regular-letter-spacing);
+        line-height: var(--text-m-regular-line-height);
+        font-style: var(--text-m-regular-font-style);
+`
  const SpecialItem = styled.div`
      //   width:100%;
      // //  background:yellow;
@@ -122,12 +151,16 @@ const HowToOrder = () => {
                 <Content>
                     <Column1>
                         <Item>
-                            Set your address
-                            <span>
-                                {' '}
-                                We use your address to find best partners and
-                                stores near to you.
-                            </span>
+                            <Card>
+                                <CardHeader>
+                                    <img src={Square} />
+                                </CardHeader>
+                                <CardTitle> Set your address</CardTitle>
+                                <CardBody>
+                                    We use your address to find best partners
+                                    and stores near to you.
+                                </CardBody>
+                            </Card>
                         </Item>
 
                         <Item>
@@ -155,23 +188,33 @@ const HowToOrder = () => {
                         </Item>
 
                         <Item>
-                            It is coffee time
-                            <span>
-                                {' '}
-                                After purchase, wait a few mins for your
-                                delicious and warm coffee
-                            </span>
+                            <Card>
+                                <CardHeader>
+                                    <img src={Square} />
+                                </CardHeader>
+                                <CardTitle> It is coffee time </CardTitle>
+                                <CardBody>
+                                    {' '}
+                                    After purchase, wait a few mins for your
+                                    delicious and warm coffee
+                                </CardBody>
+                            </Card>
                         </Item>
                     </Column2>
 
                     <Column3>
                         <Item>
-                            Add to cart
-                            <span>
-                                {' '}
-                                Customize the flavour, roast, size, and type to
-                                your preference.
-                            </span>
+                            <Card>
+                                <CardHeader>
+                                    <img src={Square} />
+                                </CardHeader>
+                                <CardTitle>Add to cart</CardTitle>
+                                <CardBody>
+                                    {' '}
+                                    Customize the flavour, roast, size, and type
+                                    to your preference.
+                                </CardBody>
+                            </Card>
                         </Item>
 
                         <Item>
