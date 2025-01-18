@@ -4,15 +4,25 @@ import Arrow4 from '../assets/vectors/arrow4.png'
 
 import styled from 'styled-components'
 
-const WhereverYouAre2 = styled.div`
-    height: 876px;
-
-    background-color: aquamarine;
+const Container = styled.div`
     position: relative;
-    width: 1440px;
-
+    width: 100vw;
+    height: 100vh;
+    background-color: #ba2d0b;
     background-size: cover;
     background-position: 50% 50%;
+`
+
+const ComponentTitle = styled.div`
+    padding: 20px;
+    font-family: var(--title-m-semibold-font-family);
+    font-weight: var(--title-m-semibold-font-weight);
+    color: var(--base-900);
+    font-size: var(--title-m-semibold-font-size);
+    letter-spacing: var(--title-m-semibold-letter-spacing);
+    line-height: var(--title-m-semibold-line-height);
+    white-space: nowrap;
+    font-style: var(--title-m-semibold-font-style);
 `
 
 const Group27 = styled.div`
@@ -42,46 +52,26 @@ const DarkGreyTerrazzo = styled.div`
     font-style: var(--title-m-semibold-font-style);
 `
 
-const OverlapGroup6 = styled.div`
-    position: absolute;
-    width: 1490px;
-    height: 725px;
-    top: 0;
-    left: 0;
-`
 
-const UnsplashLExpfwwoeg = styled.img`
+
+const GallaryImg1 = styled.img`
     position: absolute;
     width: 344px;
-    height: 548px;
-    top: 97px;
-    left: 0;
+
+
     object-fit: cover;
 `
 
-const UnsplashFgknhwlmy = styled.img`
+const GallaryImg2 = styled.img`
     position: absolute;
-    width: 292px;
-    height: 489px;
+
     top: 0;
     left: 1198px;
 `
 
-const Group28 = styled.div`
-    position: absolute;
-    width: 637px;
-    height: 251px;
-    top: 396px;
-    left: 449px;
-`
 
-const Group29 = styled.div`
-    position: absolute;
-    width: 641px;
-    height: 186px;
-    top: 0;
-    left: 0;
-`
+
+
 
 const GrabACupOfCoffee = styled.p`
     position: absolute;
@@ -162,41 +152,21 @@ const Group30 = styled.img`
 
 const Schedule = () => {
     return (
-        <WhereverYouAre2>
-            <Group27>
-                <Overlap9>
-                    <DarkGreyTerrazzo>#schedule your order</DarkGreyTerrazzo>
-                    <OverlapGroup6>
-                        <UnsplashLExpfwwoeg src={Gallary1} />
-                        <UnsplashFgknhwlmy src={Gallary3} />
-                        <Group28>
-                            <Group29>
-                                <GrabACupOfCoffee>
-                                    Grab a cup of coffee with your buds
-                                    <br />
-                                    or at the office.
-                                </GrabACupOfCoffee>
-                                <TextWrapper32>
-                                    Lorem ipsum dolor sit amet consectetur.
-                                    Justo faucibus fusce urna faucibus. Blandit
-                                    sociis pulvinar habitasse aliquam arcu massa
-                                    at mi consectetur. Faucibus ut elementum
-                                    fames mauris amet pulvinar ultrices ut sed.
-                                    Gravida ornare proin eleifend pulvinar
-                                    ultrices sed in in
-                                </TextWrapper32>
-                            </Group29>
-                            <AtomCTAButton2>
-                                <p>ORDER NOW AND SCHEDULE YOUR DELIVERY</p>
-                            </AtomCTAButton2>
-                        </Group28>
-                        <TextWrapper33>#FRIENDS</TextWrapper33>
-                        <TextWrapper34>#WORK</TextWrapper34>
-                        <Group30 src={Arrow4} />
-                    </OverlapGroup6>
-                </Overlap9>
-            </Group27>
-        </WhereverYouAre2>
+        <Container>
+            <ComponentTitle>#schedule your order</ComponentTitle>
+            <GallaryImg1 src={Gallary1} />
+            <GallaryImg2 src={Gallary3} />
+            Grab a cup of coffee with your buds
+            <br />
+            or at the office. Lorem ipsum dolor sit amet consectetur. Justo
+            faucibus fusce urna faucibus. Blandit sociis pulvinar habitasse
+            aliquam arcu massa at mi consectetur. Faucibus ut elementum fames
+            mauris amet pulvinar ultrices ut sed. Gravida ornare proin eleifend
+            pulvinar ultrices sed in in
+            <p>ORDER NOW AND SCHEDULE YOUR DELIVERY</p>
+            #FRIENDS #WORK
+            <Group30 src={Arrow4} />
+        </Container>
     )
 }
 export default Schedule
