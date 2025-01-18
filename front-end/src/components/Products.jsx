@@ -24,11 +24,11 @@ const ComponentTitle = styled.div`
 `
 const ProductList= styled.div`
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
-    gap: 20px; /* Gap between grid items */
-    width: 100%; /* Full width */
-    max-width: 600px; /* Optional max width */
-   
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+
 `
 
 
