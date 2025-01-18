@@ -48,10 +48,9 @@ const Img1 = styled.div`
 `
 
 const RightSection = styled.div`
-
+    display: flex;
     flex-direction: row-reverse;
     color: white;
-    //background: pink;
     position: relative;
 `
 const Img2 = styled.div`
