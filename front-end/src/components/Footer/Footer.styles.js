@@ -1,3 +1,5 @@
+import styled from 'styled-components'
+import BackgroundImg from 'assets/bkfooter.png'
 export const FooterContainer = styled.footer`
     position: relative;
     width: 1441px;
