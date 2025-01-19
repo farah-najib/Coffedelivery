@@ -1,40 +1,14 @@
-import styled from 'styled-components'
-import Logo from '../assets/logo-img/logo1.png'
+import Logo from 'assets/logo-img/logo1.png'
 import { useNavigate } from 'react-router-dom'
-const NavbarContainer = styled.nav`
-    // padding: 16px 159px;
+import{NavbarContainer, BrandContainer , NavLinks,CustomButton } from "./Header.styles"
 
-    overflow: hidden;
-    //background-color: #fff;
-    //border-radius:50px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-`
-
-const BrandContainer = styled.img`
-
-`
-
-const NavLinks = styled.div`
-    display: flex;
-    gap: 16px;
-`
-
-const CustomButton = styled.button`
-    background-color: var(--green-600);
-    border-radius: 8px;
-    color: white;
-    padding: 8px 16px;
-`
 
 const Navbar = () => {
-     const navigate = useNavigate() // Initialize navigate function
+    const navigate = useNavigate() // Initialize navigate function
 
-     const handleSignInClick = () => {
-         navigate('/signin') // Navigate to the Sign In page
-     }
+    const handleSignInClick = () => {
+        navigate('/signin') // Navigate to the Sign In page
+    }
     return (
         <NavbarContainer className="navbar navbar-expand-lg">
             <div className="container">

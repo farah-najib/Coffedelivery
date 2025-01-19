@@ -1,11 +1,10 @@
 import styled from 'styled-components'
-import ArrowImg2 from '../assets/vectors/arrow2.png'
-import ArrowImg1 from '../assets/vectors/arrow.png'
-import Coffeebeans from '../assets/coffee-beans.png'
-import ElementImg from '../assets/element.png'
-import ElementImg2 from '../assets/element2.png'
-import ElementImg3 from '../assets/element3.png'
-
+import ArrowImg2 from 'assets/vectors/arrow2.png'
+import ArrowImg1 from 'assets/vectors/arrow.png'
+import Coffeebeans from 'assets/coffee-beans.png'
+import ElementImg from 'assets/element.png'
+import ElementImg2 from 'assets/element2.png'
+import ElementImg3 from 'assets/element3.png'
 
 const BannerContainer = styled.div`
     position: relative;
@@ -28,7 +27,7 @@ const CoffeeBean = styled.div`
 const Cloumn1 = styled.div`
     width: 547px;
     height: 241px;
-    display:flex;
+    display: flex;
 `
 const CoffeeBeanImg = styled.div`
     position: relative;
@@ -75,7 +74,6 @@ const Cloumn3 = styled.div`
     width: 547px;
     height: 241px;
     display: flex;
-
 `
 
 const Cup = styled.div`
@@ -83,7 +81,6 @@ const Cup = styled.div`
     top: -50%;
 
     padding: 10px;
-
 `
 
 const Latte = styled.div`
@@ -104,7 +101,7 @@ const Americano = styled.div`
     height: 200px;
     top: 0;
     left: 331px;
-    background:url(${ElementImg2});
+    background: url(${ElementImg2});
     background-size: cover;
 `
 
@@ -119,8 +116,6 @@ const Cappuccino = styled.div`
     background-size: cover;
 `
 
-
-
 const Content = styled.div`
     position: absolute;
     width: 927px;
@@ -131,26 +126,18 @@ const Content = styled.div`
     //background-color: yellow;
 `
 
+const Title = styled.div``
 
-const Title = styled.div`
+const Description = styled.p``
 
-`
-
-const Description = styled.p`
-
-`
-
-
-const Button = styled.div`
-
-`
+const Button = styled.div``
 
 const Arrow1 = styled.div`
     position: absolute;
     width: 336px;
     height: 95px;
-    background :url(${ArrowImg1});
-    background-size:cover;
+    background: url(${ArrowImg1});
+    background-size: cover;
     top: 81px;
     left: 805px;
 `
@@ -159,30 +146,26 @@ const Arrow2 = styled.div`
     position: absolute;
     width: 95px;
     height: 228px;
-     background :url(${ArrowImg2});
-    background-size:cover;
+    background: url(${ArrowImg2});
+    background-size: cover;
     top: 17px;
     left: 0;
 `
 
-const Banner = () => {
+const Home = () => {
     return (
         <BannerContainer>
             <Content>
-
                 <Title>
-                    Craving the perfect cup of coffee?
-                    Our blends are{' '}
-                    lovely and delicious.
+                    Craving the perfect cup of coffee? Our blends are lovely and
+                    delicious.
                 </Title>
                 <Description>
                     With Coffee Delivery, you can have your coffee delivered to
                     you wherever you are, at any time.
                 </Description>
 
-
-                    <Button>Order your coffee now</Button>
-
+                <Button>Order your coffee now</Button>
 
                 <Arrow1 />
                 <Arrow2 />
@@ -213,4 +196,4 @@ const Banner = () => {
     )
 }
 
-export default Banner
+export default Home

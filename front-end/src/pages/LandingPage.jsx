@@ -1,15 +1,13 @@
-
-import Header from '../components/Header'
-import Banner from '../components/Banner'
-import AboutUs from '../components/AboutUs'
-import Services from '../components/Services'
-import Products from '../components/Products'
-import Footer from '../components/Footer'
-import Schedule from '../components/Schedule'
-import Choice from '../components/Choice'
-import InstaComp from '../components/InstaComp'
-import HowToOrder from '../components/HowToOrder'
-
+import Header from 'components/Header/Header'
+import Banner from 'src/components/Home/Home'
+import AboutUs from 'components/AboutUs/AboutUs'
+import Services from 'components/Services/Services'
+import Products from 'components/Products/Products'
+import Footer from 'components/Footer/Footer'
+import Schedule from 'components/Schedule/Schedule'
+import Choice from 'components/Choice/Choice'
+import InstaComp from 'components/InstaComp/InstaComp'
+import HowToOrder from 'components/HowToOrder/HowToOrder'
 
 const LandingPage = () => {
     return (

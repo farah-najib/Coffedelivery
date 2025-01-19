@@ -1,9 +1,9 @@
-import Gallary1 from '../assets/gallary/gallary1.png'
-import Gallary3 from '../assets/gallary/gallary3.png'
-import Arrow4 from '../assets/vectors/arrow4.png'
+import Gallary1 from 'assets/gallary/gallary1.png'
+import Gallary3 from 'assets/gallary/gallary3.png'
+//import Arrow4 from 'assets/vectors/arrow4.png'
 
 import styled from 'styled-components'
-const ScheduleComponent = styled.div`
+export const ScheduleComponent = styled.div`
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -12,7 +12,7 @@ const ScheduleComponent = styled.div`
     background-position: 50% 50%;
 `
 
-const ComponentTitle = styled.div`
+export const ComponentTitle = styled.div`
     padding: 20px;
     font-family: var(--title-m-semibold-font-family);
     font-weight: var(--title-m-semibold-font-weight);
@@ -24,7 +24,7 @@ const ComponentTitle = styled.div`
     font-style: var(--title-m-semibold-font-style);
 `
 
-const Container = styled.div`
+export const Container = styled.div`
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,34 +33,33 @@ const Container = styled.div`
     grid-row-gap: 7px;
 `
 
-const LeftSection = styled.div`
-
+export const LeftSection = styled.div`
     position: relative;
     display: flex;
     flex-direction: row;
     //background: blue;
 `
-const Img1 = styled.div`
+export const Img1 = styled.div`
     width: 344px;
     height: 548px;
     background: url(${Gallary1}) no-repeat center center;
     background-size: cover;
 `
 
-const RightSection = styled.div`
+export const RightSection = styled.div`
     display: flex;
     flex-direction: row-reverse;
     color: white;
     position: relative;
 `
-const Img2 = styled.div`
+export const Img2 = styled.div`
     width: 292px;
     height: 489px;
     background: url(${Gallary3}) no-repeat center center;
     background-size: cover;
 `
 
-const Hashtag = styled.div`
+export const Hashtag = styled.div`
     font-size: 48px;
     font-weight: bold;
     color: #002451;
@@ -68,21 +67,21 @@ const Hashtag = styled.div`
     text-transform: uppercase;
 `
 
-const MiddletSection = styled.div``
+export const MiddletSection = styled.div``
 
-const Heading = styled.h1`
+export const Heading = styled.h1`
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
 `
 
-const Text = styled.p`
+export const Text = styled.p`
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 30px;
 `
 
-const Button = styled.button`
+export const Button = styled.button`
     background-color: white;
     color: #ba2b1a;
     font-size: 16px;
@@ -92,34 +91,3 @@ const Button = styled.button`
     font-weight: bold;
     border-radius: 5px;
 `
-const Schedule = () => {
-    return (
-        <ScheduleComponent>
-            <ComponentTitle>#schedule your order</ComponentTitle>
-            <Container>
-                <LeftSection>
-                    <Img1 />
-                    <Hashtag>#Friends</Hashtag>
-                </LeftSection>
-
-                <MiddletSection>
-                    <Heading>
-                        Grab a cup of coffee with your buds or at the office.
-                    </Heading>
-                    <Text>
-                        Lorem ipsum dolor sit amet consectetur. Justo faucibus
-                        fusce urna faucibus. Blandit sociis pulvinar habitasse
-                        aliquam arcu massa at mi consectetur.
-                    </Text>
-                    <Button>Order Now and Schedule Your Delivery</Button>
-                </MiddletSection>
-
-                <RightSection>
-                    <Img2 />
-                    <Hashtag>#Work</Hashtag>
-                </RightSection>
-            </Container>
-        </ScheduleComponent>
-    )
-}
-export default Schedule

@@ -1,8 +1,8 @@
-import CoffeeCup from '../assets/coffeecup.png'
-import CoffeeBag from '../assets/coffeebag.png'
-import ArrowEight from '../assets/vectors/arrow8.png'
+import CoffeeCup from 'assets/coffeecup.png'
+import CoffeeBag from 'assets/coffeebag.png'
+import ArrowEight from 'assets/vectors/arrow8.png'
 import styled from 'styled-components'
-const OurServices = styled.div`
+export const OurServices = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,11 +14,9 @@ const OurServices = styled.div`
     background-color: palevioletred;
     background-size: cover;
     background-position: 50% 50%;
-
-
 `
 
-const ComponentTitle = styled.div`
+export const ComponentTitle = styled.div`
     padding: 20px;
     font-family: var(--title-m-semibold-font-family);
     font-weight: var(--title-m-semibold-font-weight);
@@ -29,7 +27,7 @@ const ComponentTitle = styled.div`
     white-space: nowrap;
     font-style: var(--title-m-semibold-font-style);
 `
-const Content = styled.div`
+export const Content = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,12 +35,12 @@ const Content = styled.div`
     gap: 50px;
 `
 
-const ListOfCard = styled.div`
+export const ListOfCard = styled.div`
     display: flex;
     flex-direction: row;
-    gap:32px;
+    gap: 32px;
 `
-const Card = styled.div`
+export const Card = styled.div`
     width: 352px;
     height: 248px;
     display: flex;
@@ -52,17 +50,15 @@ const Card = styled.div`
     box-shadow: var(--drop-2);
     justify-content: center;
     align-items: center;
-
 `
 
-const CardHeader = styled.i`
+export const CardHeader = styled.i`
     font-size: 56px;
     color: #4e5b3e;
     display: inline-block;
 `
 
-const Title = styled.div`
-
+export const Title = styled.div`
     font-family: var(--title-s-semibold-font-family);
     font-weight: var(--title-s-semibold-font-weight);
     color: #000000;
@@ -73,8 +69,7 @@ const Title = styled.div`
     font-style: var(--title-s-semibold-font-style);
 `
 
-const Description = styled.p`
-
+export const Description = styled.p`
     width: 320px;
     font-family: var(--text-s-regular-font-family);
     font-weight: var(--text-s-regular-font-weight);
@@ -86,14 +81,13 @@ const Description = styled.p`
     font-style: var(--text-s-regular-font-style);
 `
 
-const Button = styled.div`
+export const Button = styled.div`
     padding: 12px 24px;
     border-radius: 8px;
     border: 1px solid var(--green-600);
 `
 
-
-const CheckOurProducts = styled.div`
+export const CheckOurProducts = styled.div`
     width: 1120px;
     height: 241px;
     position: relative;
@@ -107,24 +101,20 @@ const CheckOurProducts = styled.div`
     background-size: 100% 100%;
 `
 
-const Column1 = styled.div`
+export const Column1 = styled.div`
     height: 100%;
     //background: blue;
 `
-const Column2 = styled.div`
+export const Column2 = styled.div`
     height: 100%;
     //background: rgb(175, 76, 149);
 `
-const Column3 = styled.div`
+export const Column3 = styled.div`
     height: 100%;
     // background: green;
 `
 
-
-
-
-
-const TextButton6 = styled.div`
+export const TextButton6 = styled.div`
     position: relative;
     width: fit-content;
     margin-top: -1px;
@@ -138,21 +128,20 @@ const TextButton6 = styled.div`
     font-style: var(--text-m-bold-font-style);
 `
 
-
-const ArrowImg = styled.div`
+export const ArrowImg = styled.div`
     width: 245px;
     height: 148px;
     background: url(${ArrowEight}) no-repeat center;
     background-size: cover;
 `
 
-const CupBagImg = styled.div`
-   // position: absolute;
+export const CupBagImg = styled.div`
+    // position: absolute;
     width: 243px;
     height: 283px;
 `
 
-const Bag = styled.div`
+export const Bag = styled.div`
     //position: absolute;
     width: 144px;
     height: 283px;
@@ -160,7 +149,7 @@ const Bag = styled.div`
     background-size: cover;
 `
 
-const Cup = styled.div`
+export const Cup = styled.div`
     position: absolute;
     width: 126px;
     height: 190px;
@@ -169,70 +158,3 @@ const Cup = styled.div`
     top: 93px;
     left: 117px;
 `
-
-
-const Services = () => {
-    return (
-        <OurServices>
-            <ComponentTitle>#Our services</ComponentTitle>
-            <Content>
-                <ListOfCard>
-                    <Card>
-                        <CardHeader className="fi fi-rr-calendar-day" />
-                        <Title>Schedule</Title>
-                        <Description>
-                            Planning an office party or a coffee break with
-                            friends? Let us take care of everything.
-                        </Description>
-                        <Button>Schedule our service</Button>
-                    </Card>
-
-                    <Card>
-                        <CardHeader className="fi fi-rs-shop" />
-                        <Title>Stores</Title>
-                        <Description>
-                            Find the nearest one and come try a new experience
-                            and taste for yourself.
-                        </Description>
-                        <Button>Find a store near you</Button>
-                    </Card>
-
-                    <Card>
-                        <CardHeader className="fi fi-rs-shipping-fast" />
-                        <Title>Delivery</Title>
-                        <Description>
-                            With our platform, we can deliver coffee straight to
-                            you, no matter where you are.
-                        </Description>
-                        <Button>Order coffee now</Button>
-                    </Card>
-                </ListOfCard>
-
-                <CheckOurProducts>
-                    <Column1>
-                        <CupBagImg>
-                            <Bag />
-                            <Cup />
-                        </CupBagImg>
-                    </Column1>
-                    <Column2>
-                        <ArrowImg />
-                    </Column2>
-                    <Column3>
-                            Upgrade your experience
-
-                        Upgrade your coffee experience. Try our fresh beans and
-                        taste the rich, delicious flavour for yourself. You
-                        won&#39;t be disappointed.
-                        <TextButton6>Try our fresh beans</TextButton6>
-                    </Column3>
-                </CheckOurProducts>
-            </Content>
-        </OurServices>
-    )
-}
-
-export default Services
-
-
-
