@@ -154,7 +154,7 @@ const Arrow2 = styled.div`
 
 const Home = () => {
     return (
-        <BannerContainer>
+        <BannerContainer id="#Home">
             <Content>
                 <Title>
                     Craving the perfect cup of coffee? Our blends are lovely and

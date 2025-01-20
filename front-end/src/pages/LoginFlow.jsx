@@ -13,7 +13,7 @@ const MainContainer = styled.div`
     flex-direction: row;
     width: 100vw;
     height: 100vh;
-    overflow: clip;
+    overflow: hidden;
 `
 
 const FlexRowB = styled.div`

@@ -20,7 +20,7 @@ import ProductPlaceholder from 'assets/product-placeholder.png'
         quantity: 6
     }
     return (
-        <OurProducts>
+        <OurProducts id="menu">
             <ComponentTitle>#Our products</ComponentTitle>
 
             <ProductList>

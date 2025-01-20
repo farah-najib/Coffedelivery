@@ -16,7 +16,7 @@ import {
 
 const Aboutus = () => {
     return (
-        <Container>
+        <Container id="About">
             <ComponentTitle>#About us</ComponentTitle>
             <Content>
                 <Description>

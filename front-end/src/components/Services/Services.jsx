@@ -28,7 +28,7 @@
 
  const Services = () => {
     return (
-        <OurServices>
+        <OurServices id="services">
             <ComponentTitle>#Our services</ComponentTitle>
             <Content>
                 <ListOfCard>

@@ -16,7 +16,7 @@ import {
 } from './Schedule.styles'
 const Schedule = () => {
     return (
-        <ScheduleComponent>
+        <ScheduleComponent id="schedule">
             <ComponentTitle>#schedule your order</ComponentTitle>
             <Container>
                 <LeftSection>
