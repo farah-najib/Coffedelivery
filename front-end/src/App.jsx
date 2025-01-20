@@ -4,11 +4,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from 'pages/LandingPage'
 import SignInPage from 'pages/LoginFlow'
 import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 const GlobalStyle = createGlobalStyle``
+
+const Application = styled.div`
+overflow:hidden;
+
+`
 function App() {
     return (
-        <div className="app">
+        <Application>
             <GlobalStyle />
             <Router>
                 <Routes>
@@ -16,7 +22,7 @@ function App() {
                     <Route path="/signin" element={<SignInPage />} />
                 </Routes>
             </Router>
-        </div>
+        </Application>
     )
 }
 
