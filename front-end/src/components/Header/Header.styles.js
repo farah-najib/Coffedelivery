@@ -18,6 +18,33 @@ export const HeaderLogo = styled.a`
     float: left;
     padding: 10px 20px;
 `
+
+export const SearchWrapper = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+export const SearchIcon = styled.i`
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 10px;
+`
+
+export const SearchInput = styled.input`
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 200px;
+    transition: width 0.3s ease;
+    font-size: 1rem;
+    background-color: #fff;
+
+    &:focus {
+        width: 250px;
+        border-color: #007bff;
+    }
+`
 export const NavLinks = styled.ul`
     display: flex;
     list-style: none;

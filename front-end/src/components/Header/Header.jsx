@@ -6,8 +6,11 @@ import {
     HeaderLogo,
     NavLinks,
     SigninButton,
+    SearchInput,
     Link,
-    MenuBtn
+    MenuBtn,
+    SearchWrapper,
+    SearchIcon
 } from './Header.styles'
 
 const navLinks = [
@@ -18,12 +21,25 @@ const navLinks = [
     { href: '#schedule', label: 'Schedule' }
 ]
 const Header = () => {
-    const navigate = useNavigate() // Initialize navigate function
+    const navigate = useNavigate()
 
     const handleSignInClick = () => {
-        navigate('/signin') // Navigate to the Sign In page
+        navigate('/signin')
     }
     const [menuOpen, setMenuOpen] = useState(false)
+
+     const [isSearchOpen, setIsSearchOpen] = useState(false)
+     const [searchValue, setSearchValue] = useState('')
+
+     const handleSearchToggle = () => {
+         setIsSearchOpen(!isSearchOpen)
+     }
+
+     const handleSearchSubmit = (e) => {
+         e.preventDefault()
+         console.log('Search value:', searchValue)
+         // Perform search or navigation logic here
+     }
     return (
         <HeaderContainer>
             <HeaderLogo href="#home" />
@@ -37,10 +53,26 @@ const Header = () => {
                     </Link>
                 ))}
             </NavLinks>
-            <div>
-                <i className="fi fi-br-search"></i>
+            <SearchWrapper>
+                {isSearchOpen ? (
+                    <form onSubmit={handleSearchSubmit}>
+                        <SearchInput
+                            type="text"
+                            placeholder="Search..."
+                            value={searchValue}
+                            onChange={(e) => setSearchValue(e.target.value)}
+                            onBlur={() => setIsSearchOpen(false)} // Close input on blur
+                            autoFocus // Automatically focus the input
+                        />
+                    </form>
+                ) : (
+                    <SearchIcon
+                        className="fi fi-br-search"
+                        onClick={handleSearchToggle}
+                    />
+                )}
                 <SigninButton onClick={handleSignInClick}>Sign in</SigninButton>
-            </div>
+            </SearchWrapper>
         </HeaderContainer>
     )
 }
