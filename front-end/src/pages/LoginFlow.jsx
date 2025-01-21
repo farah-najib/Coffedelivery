@@ -1,162 +1,136 @@
-import styled from 'styled-components'
-import GreenBg from 'assets/greenbk.png'
-import CoffeeBag from 'assets/coffeebag.png'
-import CoffeeCup from 'assets/coffeecup.png'
-import Vector from 'assets/vectors/vector1.png'
-import VectorTwo from 'assets/vectors/vector2.png'
-import VectorThree from 'assets/vectors/vector3.png'
-import VectorFour from 'assets/vectors/vector4.png'
-import SignIn from 'components/SigninForm/SigninForm'
+import React from 'react';
+import styled from 'styled-components';
+import SigninForm from '../components/SigninForm/SigninForm';
+import GreenBg from '../assets/greenbk.png';
+import CoffeeBag from '../assets/coffeebag.png';
+import CoffeeCup from '../assets/coffeecup.png';
+import Vector1 from '../assets/vectors/vector1.png';
+import Vector2 from '../assets/vectors/vector2.png';
+import Vector3 from '../assets/vectors/vector3.png';
+import Logo from "../assets/logo-img/logo1.png";
 
-const MainContainer = styled.div`
+
+
+const Container = styled.div`
     display: flex;
-    flex-direction: row;
     width: 100vw;
     height: 100vh;
+    flex-direction: row;
     overflow: hidden;
-`
+    position:relative;
 
-const FlexRowB = styled.div`
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+`;
+
+const LeftSection = styled.div`
     position: relative;
-    width: 704px;
-    height: 100%;
-    background: url(${GreenBg});
+    width: 50%;
+    background: url(${GreenBg}) no-repeat center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-`
+    align-items: center;
+    justify-content: center;
 
-const TextArea = styled.div`
+    @media (max-width: 768px) {
+       display:none;
+    }
+`;
+
+const Vectors = styled.div`
+    position: absolute;
     width: 100%;
-    height: 40%;
+    height: 100%;
+    z-index: 0;
+
+    .vector1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 200px;
+    }
+
+    .vector2 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 400px;
+    }
+
+  
+`;
+
+const Content = styled.div`
+    z-index: 1;
+    color: white;
+    text-align: center;
+`;
+
+const RightSection = styled.div`
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
+    justify-content:left;
+    
+   
+    padding: 5px;
 
-const ImageArea = styled.div`
-    width: 704px;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
+  
 
-const CupBagImg = styled.div`
-    position: relative;
-    width: 243px;
-    height: 388px;
-`
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 50%;
+    }
+`;
 
-const Bag = styled.div`
+const LogoWrapper = styled.div`
     position: absolute;
-    width: 198px;
-    height: 388px;
-    top: 0;
-    left: 0;
-    background: url(${CoffeeBag}) no-repeat center;
-    background-size: cover;
-`
+    top: 20px;
+    width: 100px;
+   
+    left:50%;
+    img {
+        width: 75%;
+        
 
-const Cup = styled.div`
-    position: absolute;
-    width: 172px;
-    height: 261px;
-    top: 93px;
-    left: 117px;
-    background: url(${CoffeeCup}) no-repeat center;
-    background-size: cover;
-`
+    }
+`;
 
-const Title = styled.span`
-    height: 62px;
-    color: #ffffff;
-    font-family: 'Dancing Script', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 62px;
-    white-space: nowrap;
-`
+const Vector3Image = styled.img`
+  position: absolute;
+  top: 50%;
+  right: -180px;
+  transform: translateY(-50%);
+  width: 250px;
+  border-radius: 50%;
+`;
 
-const Paragraph = styled.span`
-    position: relative;
-    width: 444px;
-    height: 42px;
-    color: #ffffff;
-    font-family: 'Ruda', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20.8px;
-    text-overflow: initial;
-    overflow: hidden;
-`
+const loginFlow = () => (
+    <Container>
+        <LeftSection>
+            <Vectors>
+                <img src={Vector1} alt="Vector1" className="vector1" />
+                <img src={Vector2} alt="Vector2" className="vector2" />
+                
+            </Vectors>
+            <Content>
+                <h1>Check our Products</h1>
+                <p>All our products are prepared with love step by step.</p>
+                <img src={CoffeeBag} alt="Coffee Bag" style={{ width: '200px' }} />
+                <img src={CoffeeCup} alt="Coffee Cup" style={{ width: '150px', marginLeft: '20px' }} />
+            </Content>
+        </LeftSection>
+        <LogoWrapper>
+                <img src={Logo} alt="Logo" />
+            </LogoWrapper>
+        <RightSection>
+          
+            <SigninForm />
+                           
+            <Vector3Image src={Vector3} alt="Vector3" />
+        </RightSection>
+    </Container>
+);
 
-const Vector1 = styled.div`
-    position: absolute;
-    width: 182.769px;
-    height: 193.879px;
-    top: 0;
-    left: 0;
-    background: url(${Vector}) no-repeat center;
-    background-size: cover;
-    z-index: 2;
-`
-const Vector2 = styled.div`
-    position: absolute;
-    width: 631.174px;
-    height: 242.218px;
-    top: 550px;
-    left: 0;
-    background: url(${VectorTwo}) no-repeat center;
-    background-size: cover;
-`
-const Vector3 = styled.div`
-    position: absolute;
-    width: 252px;
-    height: 252px;
-    top: 0;
-    left: 1314.708px;
-    background: url(${VectorThree}) no-repeat center;
-    background-size: cover;
-    border-radius: 50%;
-`
-
-const Vector4 = styled.div`
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: 628px;
-    left: 621px;
-    background: url(${VectorFour}) no-repeat center;
-    background-size: cover;
-`
-
-const loginFlow = () => {
-    return (
-        <MainContainer>
-            <FlexRowB>
-                <Vector1 />
-                <Vector2 />
-                <TextArea>
-                    <Title>Check our products</Title>
-                    <Paragraph>
-                        All our products are prepared with love step by step.{' '}
-                        <br />
-                        The best choice of coffee beans and totally natural.
-                    </Paragraph>
-                </TextArea>
-                <ImageArea>
-                    <CupBagImg>
-                        <Bag />
-                        <Cup />
-                    </CupBagImg>
-                </ImageArea>
-            </FlexRowB>
-            <SignIn />
-            <Vector3 />
-            <Vector4 />
-        </MainContainer>
-    )
-}
-export default loginFlow
+export default loginFlow;
