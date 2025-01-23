@@ -23,15 +23,17 @@ export const ComponentTitle = styled.div`
 export const ProductList = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 600px;
+    gap: 50px;
+    padding-top: 100px;
+    padding-left: 150px;
 `
 
 export const ProductItem = styled.div`
     display: flex;
     align-items: center;
-    gap: 15px;
+    width:544px;
+    height: 80px;
+
 `
 
 export const Image = styled.img`
@@ -41,8 +43,8 @@ export const Image = styled.img`
     object-fit: cover;
 `
 export const Description = styled.div`
-display:flex
-flex-direction:row;;
+
+
 `
 
 export const Price = styled.div`
