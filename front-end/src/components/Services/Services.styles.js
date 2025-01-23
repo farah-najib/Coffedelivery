@@ -2,18 +2,24 @@ import CoffeeCup from 'assets/coffeecup.png'
 import CoffeeBag from 'assets/coffeebag.png'
 import ArrowEight from 'assets/vectors/arrow8.png'
 import styled from 'styled-components'
+import mediaQuery from 'styles/mediaQuery'
+
 export const OurServices = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
-    //justify-content: center;
-    //align-items: center;
     width: 100vw;
     height: 100vh; /* Full viewport height */
-    // overflow: hidden;
+    //overflow: hidden;
     background-color: palevioletred;
     background-size: cover;
     background-position: 50% 50%;
+
+    ${mediaQuery('mediumHandset')`
+
+     height: auto;
+
+      `}
 `
 
 export const ComponentTitle = styled.div`
@@ -28,21 +34,29 @@ export const ComponentTitle = styled.div`
     font-style: var(--title-m-semibold-font-style);
 `
 export const Content = styled.div`
-
-
     gap: 50px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    ${mediaQuery('mediumHandset')`
+
+
+        gap:15px
+      `}
 `
 
 export const ListOfCard = styled.div`
     display: flex;
     flex-direction: row;
     gap: 32px;
+
+    ${mediaQuery('mediumHandset')`
+
+        flex-direction: column;
+        gap:15px
+      `}
 `
 export const Card = styled.div`
     width: 352px;
@@ -103,6 +117,12 @@ export const CheckOurProducts = styled.div`
 
     color: #ffffff;
     background-size: 100% 100%;
+
+    ${mediaQuery('mediumHandset')`
+
+    width:396px;
+    height: 512 px;
+      `}
 `
 
 export const Column1 = styled.div`

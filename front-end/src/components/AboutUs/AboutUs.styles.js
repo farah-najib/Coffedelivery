@@ -94,7 +94,9 @@ export const Description = styled.div`
 export const List = styled.div`
     position: relative;
     width: 258px;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
 `
 
 export const ListItem = styled.p`

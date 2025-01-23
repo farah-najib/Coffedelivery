@@ -5,7 +5,6 @@ const screens = {
     largeTablet: 768,
     mediumHandset: 412, // Add mobile breakpoint for 412px
     largeHandset: 480,
-    //mediumHandset: 360,
     smallHandset: 320
 }
 

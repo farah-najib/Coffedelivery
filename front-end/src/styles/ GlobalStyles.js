@@ -68,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
     --text-m-bold-letter-spacing: 0px;
     --text-m-bold-line-height: 129.99999523162842%;
     --text-m-bold-font-style: normal;
-    --text-m-regular-font-family: "Ruda-Regular", Helvetica;
+    --text-m-regular-font-family: "Halant";
     --text-m-regular-font-weight: 400;
     --text-m-regular-font-size: 16px;
     --text-m-regular-letter-spacing: 0px;

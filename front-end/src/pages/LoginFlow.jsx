@@ -7,6 +7,10 @@ import VectorTwo from 'assets/vectors/vector2.png'
 import VectorThree from 'assets/vectors/vector3.png'
 import VectorFour from 'assets/vectors/vector4.png'
 import SignIn from 'components/SigninForm/SigninForm'
+import SignInByEmail from 'components/SigninByEmail/SigninByEmail'
+
+import Register from 'components/Register/Register'
+import mediaQuery from 'styles/mediaQuery'
 
 const MainContainer = styled.div`
     display: flex;
@@ -14,6 +18,10 @@ const MainContainer = styled.div`
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    ${mediaQuery('mediumHandset')`
+
+        flex-direction: column;
+      `}
 `
 
 const FlexRowB = styled.div`
@@ -23,6 +31,11 @@ const FlexRowB = styled.div`
     background: url(${GreenBg});
     display: flex;
     flex-direction: column;
+
+    ${mediaQuery('mediumHandset')`
+
+        display:none;
+      `}
 `
 
 const TextArea = styled.div`
@@ -153,7 +166,9 @@ const loginFlow = () => {
                     </CupBagImg>
                 </ImageArea>
             </FlexRowB>
-            <SignIn />
+            {/* <SignIn /> */}
+            {/* <SignInByEmail/> */}
+            <Register/>
             <Vector3 />
             <Vector4 />
         </MainContainer>

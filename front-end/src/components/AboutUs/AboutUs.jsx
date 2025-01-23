@@ -39,6 +39,10 @@ const Aboutus = () => {
                         <ListItem>
                             Lorem ipsum dolor sit amet consectetur. Tortor non
                         </ListItem>
+
+                        <ListItem>
+                            Lorem ipsum dolor sit amet consectetur. Tortor non
+                        </ListItem>
                     </List>
                     <Button>FIND A STORE NEAR TO YOU</Button>
                 </Description>

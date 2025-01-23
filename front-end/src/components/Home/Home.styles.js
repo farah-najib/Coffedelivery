@@ -5,6 +5,7 @@ import Coffeebeans from 'assets/coffee-beans.png'
 import ElementImg from 'assets/element.png'
 import ElementImg2 from 'assets/element2.png'
 import ElementImg3 from 'assets/element3.png'
+import mediaQuery from 'styles/mediaQuery'
 
 export const BannerContainer = styled.div`
     position: relative;
@@ -19,13 +20,20 @@ export const BannerFooter = styled.footer`
     position: absolute;
     bottom: 0; /* Position the footer at the bottom of the container */
     width: 100%;
+
+
+    ${mediaQuery('mediumHandset')`
+
+    background:red;
+  `}
 `
 
 export const CoffeeBean = styled.div`
     width: 100%;
     height: 241px;
     display: flex;
-  
+
+
 `
 export const Cloumn1 = styled.div`
     width: 547px;
@@ -39,6 +47,11 @@ export const CoffeeBeanImg = styled.div`
     background: url(${Coffeebeans});
     background-size: cover;
     animation: float 6s ease-in-out infinite;
+
+    ${mediaQuery('mediumHandset')`
+      width: 192px;
+  height: 125px;
+  `}
 `
 export const CoffeeBeanImg2 = styled.div`
     position: relative;
@@ -46,7 +59,6 @@ export const CoffeeBeanImg2 = styled.div`
     height: 176px;
     background: url(${Coffeebeans});
     background-size: cover;
-
     animation: float-reverse 8s ease-in-out infinite;
     @keyframes float {
         0%,
@@ -67,6 +79,11 @@ export const CoffeeBeanImg2 = styled.div`
             transform: translateY(20px);
         }
     }
+
+    ${mediaQuery('mediumHandset')`
+      width: 192px;
+  height: 125px;
+  `}
 `
 export const Cloumn2 = styled.div`
     width: 547px;
@@ -83,6 +100,8 @@ export const Cup = styled.div`
     position: absolute;
     top: -50%;
     padding: 10px;
+
+
 `
 
 export const Latte = styled.div`
@@ -95,7 +114,10 @@ export const Latte = styled.div`
     background-position: 50% 50%;
     background: url(${ElementImg3});
     background-size: cover;
+
 `
+
+
 
 export const Americano = styled.div`
     position: absolute;
@@ -105,6 +127,9 @@ export const Americano = styled.div`
     left: 331px;
     background: url(${ElementImg2});
     background-size: cover;
+    ${mediaQuery('mediumHandset')`
+  display: none;
+  `}
 `
 
 export const Cappuccino = styled.div`
@@ -116,6 +141,9 @@ export const Cappuccino = styled.div`
     object-fit: cover;
     background: url(${ElementImg});
     background-size: cover;
+    ${mediaQuery('mediumHandset')`
+  display: none;
+  `}
 `
 
 export const Content = styled.div`
@@ -134,7 +162,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.div`
-    font-family: 'Halant', Helvetica;
+    font-family: 'Halant';
     font-weight: 700;
     font-size: 48px;
     text-align: center;
