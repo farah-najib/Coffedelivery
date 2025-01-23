@@ -25,7 +25,10 @@ export const Content = styled.div`
     width: 1118px;
     height: 367px;
     display: flex;
-    flex-direction: colunm;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:100px;
 `
 
 export const Gallary = styled.div`
@@ -33,13 +36,13 @@ export const Gallary = styled.div`
     height: 367px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px; /* Spacing between grid items */
+    gap: 10px;
 `
 
 export const Column2 = styled.div`
     display: grid;
-    grid-template-rows: 1fr; /* Two rows of equal height */
-    gap: 10px; /* Spacing between rows */
+    grid-template-rows: 1fr;
+    gap: 10px;
 `
 
 export const Photo = styled.img`
@@ -63,17 +66,35 @@ export const Photo = styled.img`
 `
 
 export const Description = styled.div`
-    position: relative;
+    //position: relative;
     width: 548px;
     height: 367px;
     display: flex;
     flex-direction: column;
+    font-family: var(--text-l-regular-font-family);
+    font-weight: var(--text-l-regular-font-weight);
+    color: var(--base-400);
+    font-size: var(--text-l-regular-font-size);
+    letter-spacing: var(--text-l-regular-letter-spacing);
+    line-height: var(--text-l-regular-line-height);
+    font-style: var(--text-l-regular-font-style);
+
+    .title {
+        font-family: var(--title-m-semibold-font-family);
+        font-weight: var(--title-m-semibold-font-weight);
+        color: var(--basewhite);
+        font-size: var(--title-m-semibold-font-size);
+        letter-spacing: var(--title-m-semibold-letter-spacing);
+        line-height: var(--title-m-semibold-line-height);
+        white-space: nowrap;
+        font-style: var(--title-m-semibold-font-style);
+    }
 `
 
 export const List = styled.div`
     position: relative;
     width: 258px;
-    height: 42px;
+
 `
 
 export const ListItem = styled.p`
@@ -88,13 +109,16 @@ export const ListItem = styled.p`
     font-style: var(--text-m-bold-font-style);
 `
 
-export const Button= styled.div`
+export const Button = styled.div`
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 10px 24px;
-    position: relative;
+    //position: relative;
+    // top: 194px;
+    // left: 0;
     background-color: var(--basewhite);
     border-radius: 8px;
 `

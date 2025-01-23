@@ -11,6 +11,7 @@ import {
     Description,
     List,
     ListItem,
+    Button
 
 } from './AboutUs.styles'
 
@@ -21,17 +22,25 @@ const Aboutus = () => {
             <Content>
                 <Description>
                     <p>
-                        Nature &amp; Love At our company, we strive to make your
-                        coffee time more enjoyable. Since 2020, we have been
-                        providing high-quality coffee and excellent service.
+                        <span className="title">Nature &amp; Love </span>
+                        <br />
+                        At our company, we strive to make your coffee time more
+                        enjoyable. Since 2020, we have been providing
+                        high-quality coffee and excellent service.
                     </p>
 
                     <List>
                         <ListItem>
                             Lorem ipsum dolor sit amet consectetur. Tortor non
                         </ListItem>
+                        <ListItem>
+                            Lorem ipsum dolor sit amet consectetur. Tortor non
+                        </ListItem>
+                        <ListItem>
+                            Lorem ipsum dolor sit amet consectetur. Tortor non
+                        </ListItem>
                     </List>
-                    {/* <Button>FIND A STORE NEAR TO YOU</Button> */}
+                    <Button>FIND A STORE NEAR TO YOU</Button>
                 </Description>
 
                 <Gallary>
