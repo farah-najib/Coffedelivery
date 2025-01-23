@@ -23,7 +23,7 @@ export const  ComponentTitle = styled.div`
     white-space: nowrap;
     font-style: var(--title-m-semibold-font-style);
 `
-export const  Content = styled.div`
+export const Content = styled.div`
     width: 1120px;
     height: 446px;
     display: grid;
@@ -31,6 +31,8 @@ export const  Content = styled.div`
     grid-template-rows: repeat(2, auto);
     gap: 5px;
     width: 100%;
+    padding-top: 100px;
+    padding-left: 150px;
 `
 export const  Column1 = styled.div`
     height: 100%;
