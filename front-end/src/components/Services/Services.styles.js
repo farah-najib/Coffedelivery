@@ -28,11 +28,15 @@ export const ComponentTitle = styled.div`
     font-style: var(--title-m-semibold-font-style);
 `
 export const Content = styled.div`
+
+
+    gap: 50px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+
 `
 
 export const ListOfCard = styled.div`
@@ -103,18 +107,43 @@ export const CheckOurProducts = styled.div`
 
 export const Column1 = styled.div`
     height: 100%;
-    //background: blue;
 `
 export const Column2 = styled.div`
     height: 100%;
-    //background: rgb(175, 76, 149);
+
 `
 export const Column3 = styled.div`
     height: 100%;
-    // background: green;
+
+    width: 589px;
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+
+
+
+    .title {
+
+        font-size: var(--title-XL-semibold-font-size);
+        line-height: var(--title-XL-semibold-line-height);
+        font-family: var(--title-XL-semibold-font-family);
+        font-weight: var(--title-XL-semibold-font-weight);
+        color: #ffffff;
+        letter-spacing: var(--title-XL-semibold-letter-spacing);
+        font-style: var(--title-XL-semibold-font-style);
+    }
+    .paragraph {
+        font-family: var(--text-m-regular-font-family);
+        font-weight: var(--text-m-regular-font-weight);
+        color: #ffffff;
+        font-size: var(--text-m-regular-font-size);
+        letter-spacing: var(--text-m-regular-letter-spacing);
+        line-height: var(--text-m-regular-line-height);
+        font-style: var(--text-m-regular-font-style);
+    }
 `
 
-export const TextButton6 = styled.div`
+export const TryButton = styled.button`
     position: relative;
     width: fit-content;
     margin-top: -1px;

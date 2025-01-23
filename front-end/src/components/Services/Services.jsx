@@ -1,29 +1,24 @@
 
- import{OurServices,
- ComponentTitle,
- Content,
-
- ListOfCard,
- Card,
-
- CardHeader,
-
- Title,
- Description ,
- Button ,
-
- CheckOurProducts,
- Column1 ,
- Column2,
- Column3,
-
- TextButton6,
- ArrowImg,
-
- CupBagImg,
-
- Bag ,
- Cup } from './Services.styles'
+ import {
+     OurServices,
+     ComponentTitle,
+     Content,
+     ListOfCard,
+     Card,
+     CardHeader,
+     Title,
+     Description,
+     Button,
+     CheckOurProducts,
+     Column1,
+     Column2,
+     Column3,
+     TryButton,
+     ArrowImg,
+     CupBagImg,
+     Bag,
+     Cup
+ } from './Services.styles'
 
 
  const Services = () => {
@@ -74,10 +69,15 @@
                         <ArrowImg />
                     </Column2>
                     <Column3>
-                        Upgrade your experience Upgrade your coffee experience.
-                        Try our fresh beans and taste the rich, delicious
-                        flavour for yourself. You won&#39;t be disappointed.
-                        <TextButton6>Try our fresh beans</TextButton6>
+                        <div className="title">Upgrade your experience</div>
+                        <div className="paragraph">
+                            Upgrade your experience. Upgrade your coffee
+                            experience. Try our fresh beans and taste the rich,
+                            delicious flavour for yourself. You won&#39;t be
+                            disappointed.
+                        </div>
+
+                        <TryButton>Try our fresh beans</TryButton>
                     </Column3>
                 </CheckOurProducts>
             </Content>
