@@ -1,6 +1,23 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  }
   :root {
     --red-500: rgba(186, 45, 11, 1);
     --blue-900: rgba(31, 33, 48, 1);
@@ -126,6 +143,9 @@ const GlobalStyles = createGlobalStyle`
       -50px -89px 62px 0px rgba(0, 0, 0, 0.02), -90px -159px 73px 0px rgba(0, 0, 0, 0.01),
       -140px -248px 80px 0px rgba(0, 0, 0, 0);
   }
+   button{
+   border-style: none;
+   }
 `
 
 export default GlobalStyles
