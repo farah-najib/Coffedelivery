@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import ColdBeverage from 'assets/coldbeverage.png'
-import VectorFour from 'assets/vectors/vector4.png'
-import VectorFive from 'assets/vectors/vector5.png'
+// import VectorFour from 'assets/vectors/vector4.png'
+// import VectorFive from 'assets/vectors/vector5.png'
 export const WhereverYouAre3 = styled.div`
     position: relative;
     width: 100vw;
