@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 
 const Group = styled.div`
@@ -11,7 +10,7 @@ const Group = styled.div`
     overflow: visible auto;
 `
 
-const Register = styled.span`
+const Title = styled.span`
     display: block;
     position: relative;
     height: 42px;
@@ -179,10 +178,10 @@ const Text12 = styled.span`
     font-weight: 700;
 `
 
-export default function RegisterForm() {
+const Register = () => {
     return (
         <Group>
-            <Register>Register</Register>
+            <Title>Register</Title>
             <EnterInformations>
                 Please enter your information in the fields below
             </EnterInformations>
@@ -231,3 +230,5 @@ export default function RegisterForm() {
         </Group>
     )
 }
+
+export default Register
