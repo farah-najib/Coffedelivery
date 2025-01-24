@@ -143,7 +143,7 @@ const NewAccount = styled.div`
     white-space: nowrap;
 `
 
-const App = () => {
+const SigninByEmail = () => {
     return (
         <Group15>
             <WelcomeBack>Welcome back</WelcomeBack>
@@ -174,4 +174,4 @@ const App = () => {
     )
 }
 
-export default App
+export default SigninByEmail
