@@ -6,7 +6,7 @@ import Vector from 'assets/vectors/vector1.png'
 import VectorTwo from 'assets/vectors/vector2.png'
 import VectorThree from 'assets/vectors/vector3.png'
 import VectorFour from 'assets/vectors/vector4.png'
-import SignIn from 'components/SigninForm/SigninForm'
+import SigninByAccount from 'src/components/SigninByAccount/SigninByAccount'
 import SignInByEmail from 'components/SigninByEmail/SigninByEmail'
 
 import Register from 'components/Register/Register'
