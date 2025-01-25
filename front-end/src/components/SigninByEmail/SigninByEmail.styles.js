@@ -129,7 +129,7 @@ export const TextButton = styled.span`
     white-space: nowrap;
 `
 
-export const NewAccount = styled.div`
+export const NewAccount = styled.button`
     position: relative;
     width: 138px;
     height: 13px;

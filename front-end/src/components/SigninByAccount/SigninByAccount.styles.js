@@ -50,7 +50,7 @@ export const Span = styled.span`
     font-size: var(--text-XXS-regular-font-size);
 `
 
-export const TextWrapper2 = styled.span`
+export const TextWrapper2 = styled.button`
     font-family: var(--text-XXS-bold-font-family);
     font-weight: var(--text-XXS-bold-font-weight);
     color: #1d1c25;

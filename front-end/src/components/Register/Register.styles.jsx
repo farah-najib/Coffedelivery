@@ -173,7 +173,7 @@ export const Text11 = styled.span`
     color: #79797f;
 `
 
-export const Text12 = styled.span`
+export const Text12 = styled.button`
     color: #1d1c25;
     font-weight: 700;
 `

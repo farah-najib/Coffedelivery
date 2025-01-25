@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import mediaQuery from 'styles/mediaQuery'
+
 export const Container = styled.div`
     position: relative;
     width: 100vw;
@@ -28,7 +30,12 @@ export const Content = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin:100px;
+    margin: 100px;
+
+    ${mediaQuery('mediumHandset')`
+          flex-direction: column;
+          margin: 0px;
+  `}
 `
 
 export const Gallary = styled.div`

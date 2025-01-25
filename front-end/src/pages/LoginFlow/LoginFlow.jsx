@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useState } from 'react'
 import GreenBg from 'assets/greenbk.png'
 import CoffeeBag from 'assets/coffeebag.png'
 import CoffeeCup from 'assets/coffeecup.png'
@@ -8,7 +9,6 @@ import VectorThree from 'assets/vectors/vector3.png'
 import VectorFour from 'assets/vectors/vector4.png'
 import SigninByAccount from 'src/components/SigninByAccount/SigninByAccount'
 import SignInByEmail from 'components/SigninByEmail/SigninByEmail'
-
 import Register from 'components/Register/Register'
 import mediaQuery from 'styles/mediaQuery'
 
@@ -146,6 +146,22 @@ const Vector4 = styled.div`
 `
 
 const loginFlow = () => {
+
+    const [currentForm, setCurrentForm] = useState('register') // Default form
+
+    // Renders the correct form based on the state
+    const renderForm = () => {
+        switch (currentForm) {
+            case 'signin':
+                return <SigninByAccount setCurrentForm={setCurrentForm} />
+            case 'email':
+                return <SignInByEmail setCurrentForm={setCurrentForm} />
+            case 'register':
+            default:
+                return <Register setCurrentForm={setCurrentForm} /> // Pass the setter
+        }
+    }
+
     return (
         <MainContainer>
             <FlexRowB>
@@ -166,9 +182,8 @@ const loginFlow = () => {
                     </CupBagImg>
                 </ImageArea>
             </FlexRowB>
-            {/* <SignIn /> */}
-            {/* <SignInByEmail/> */}
-            <Register/>
+
+            {renderForm()}
             <Vector3 />
             <Vector4 />
         </MainContainer>

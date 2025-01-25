@@ -15,7 +15,7 @@ import {
     Text12
 } from './Register.styles'
 
-const Register = () => {
+const Register = ({ setCurrentForm }) => {
     return (
         <Group>
             <Title>Register</Title>
@@ -62,7 +62,7 @@ const Register = () => {
 
             <Box6>
                 <Text11>Do you already have an account? </Text11>
-                <Text12>Login</Text12>
+                <Text12 onClick={() => setCurrentForm('signin')}>Login</Text12>
             </Box6>
         </Group>
     )

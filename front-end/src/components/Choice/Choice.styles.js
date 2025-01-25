@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import ColdBeverage from 'assets/coldbeverage.png'
 // import VectorFour from 'assets/vectors/vector4.png'
 // import VectorFive from 'assets/vectors/vector5.png'
+import mediaQuery from 'styles/mediaQuery'
 export const WhereverYouAre3 = styled.div`
     position: relative;
     width: 100vw;
@@ -34,6 +35,8 @@ export const Description = styled.div`
     grid-row-gap: 7px;
     padding-top: 100px;
     padding-left: 150px;
+
+    // ${mediaQuery('mediumHandset')` `}
 `
 
 export const GridRow = styled.div`
@@ -49,15 +52,15 @@ export const StepDescription = styled.div``
 
 export const Column1 = styled.div`
     height: 100%;
-    //background: blue;
+    background: blue;
 `
 export const Column2 = styled.div`
     height: 100%;
-    //background: rgb(175, 76, 149);
+    background: rgb(175, 76, 149);
 `
 export const Column3 = styled.div`
     height: 100%;
-    //background: green;
+    background: green;
 `
 export const ColdBeverageImg = styled.div`
     width: 191px;

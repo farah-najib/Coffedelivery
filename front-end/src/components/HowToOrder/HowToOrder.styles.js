@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import mediaQuery from 'styles/mediaQuery'
 
 export const  HowItWorks = styled.div`
     position: relative;
@@ -33,6 +34,10 @@ export const Content = styled.div`
     width: 100%;
     padding-top: 100px;
     padding-left: 150px;
+
+     ${mediaQuery('mediumHandset')`
+        display:flex;
+        flex-direction:column;`}
 `
 export const  Column1 = styled.div`
     height: 100%;

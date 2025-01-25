@@ -17,14 +17,14 @@ import {
     Img,
     AtomOutlinedButton2
 } from './SigninByAccount.styles'
-const SignIn = () => {
+const SignIn = ({ setCurrentForm }) => {
     return (
         <Frame>
             <Group>
                 <TextWrapper>Sign today</TextWrapper>
                 <DoYouAlreadyHave>
                     <Span>Do you already have account? </Span>
-                    <TextWrapper2>Login</TextWrapper2>
+                    <TextWrapper2 onClick={() => setCurrentForm('email')}>Login</TextWrapper2>
                 </DoYouAlreadyHave>
                 <Div>Select how do you want to sign in</Div>
                 <AtomOutlinedButton>

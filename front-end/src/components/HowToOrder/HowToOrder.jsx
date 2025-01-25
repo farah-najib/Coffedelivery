@@ -5,6 +5,7 @@ import ArrowFive from 'assets/vectors/arrow5.svg'
 import ArrowSex from 'assets/vectors/arrow6.png'
 import ArrowSeven from 'assets/vectors/arrow7.svg'
 import Square from 'assets/vectors/square.svg'
+
 import{ HowItWorks, ComponentTitle , Content ,Column1 , Column2 , Column3 , Item , Card , CardHeader , CardTitle ,
      CardBody , SpecialItem , InnerItem , Img} from "./HowToOrder.styles"
 

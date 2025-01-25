@@ -20,7 +20,7 @@ const navLinks = [
     { href: '#menu', label: 'Menu' },
     { href: '#schedule', label: 'Schedule' }
 ]
-const Header = () => {
+const Header = ({type='default'}) => {
     const navigate = useNavigate()
 
     const handleSignInClick = () => {
@@ -40,6 +40,7 @@ const Header = () => {
          console.log('Search value:', searchValue)
          // Perform search or navigation logic here
      }
+     if (type === 'logged'){return(<></>)}
     return (
         <HeaderContainer>
             <HeaderLogo href="#home" />

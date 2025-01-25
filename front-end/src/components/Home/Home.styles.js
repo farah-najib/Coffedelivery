@@ -20,12 +20,7 @@ export const BannerFooter = styled.footer`
     position: absolute;
     bottom: 0; /* Position the footer at the bottom of the container */
     width: 100%;
-
-
-    ${mediaQuery('mediumHandset')`
-
-    background:red;
-  `}
+    ${mediaQuery('mediumHandset')``}
 `
 
 export const CoffeeBean = styled.div`
@@ -50,7 +45,7 @@ export const CoffeeBeanImg = styled.div`
 
     ${mediaQuery('mediumHandset')`
       width: 192px;
-  height: 125px;
+      height: 125px;
   `}
 `
 export const CoffeeBeanImg2 = styled.div`
@@ -115,6 +110,12 @@ export const Latte = styled.div`
     background: url(${ElementImg3});
     background-size: cover;
 
+    ${mediaQuery('mediumHandset')`
+        width:168px;
+        height:168px;
+        top:0;
+        left: 0px;
+  `}
 `
 
 
@@ -147,7 +148,6 @@ export const Cappuccino = styled.div`
 `
 
 export const Content = styled.div`
-
     width: 100%;
     position: absolute;
     display: flex;
@@ -159,6 +159,14 @@ export const Content = styled.div`
     margin-top: 50px;
     margin-left: 200px;
     margin-right: 150px;
+
+    ${mediaQuery('mediumHandset')`
+ width:400px;
+ height:449px;
+ margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  `}
 `
 
 export const Title = styled.div`
@@ -175,6 +183,7 @@ export const Title = styled.div`
     .lovely {
         color: #ba2d0b;
     }
+
 `
 
 export const Description = styled.p`

@@ -1,7 +1,7 @@
 
 import{Group15 , WelcomeBack , EnterInformations , AtomInput , Label , Frame , Input ,Placeholder , Button , TextButton ,NewAccount } from './SigninByEmail.styles'
 
-const SigninByEmail = () => {
+const SigninByEmail = ({ setCurrentForm }) => {
     return (
         <Group15>
             <WelcomeBack>Welcome back</WelcomeBack>
@@ -25,9 +25,13 @@ const SigninByEmail = () => {
             <Button>
                 <TextButton>Sign with email</TextButton>
             </Button>
-            <NewAccount>
-                <span>New here?</span> <span>Create an account</span>
-            </NewAccount>
+
+            <span>
+                New here?{' '}
+                <NewAccount onClick={() => setCurrentForm('register')}>
+                    Create an account
+                </NewAccount>
+            </span>
         </Group15>
     )
 }
