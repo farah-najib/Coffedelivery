@@ -35,31 +35,38 @@ export const Content = styled.div`
     padding-top: 100px;
     padding-left: 150px;
 
-     ${mediaQuery('mediumHandset')`
+    ${mediaQuery('mediumHandset')`
+
         display:flex;
-        flex-direction:column;`}
+        flex-direction:column;
+         padding-top: 0px;
+    padding-left: 0px;
+    gap:0px;
+        `}
 `
-export const  Column1 = styled.div`
-    height: 100%;
+export const Column = styled.div`
+    //height:196px
     //background: blue;
+    ${mediaQuery('mediumHandset')`
+
+        height:196px
+        `}
 `
-export const  Column2 = styled.div`
-    height: 100%;
-    //background: rgb(175, 76, 149);
-`
-export const  Column3 = styled.div`
-    height: 100%;
-    // background: green;
-`
-export const  Item = styled.div`
+
+export const Item = styled.div`
     width: 352px;
     height: 196px;
     object-fit: cover;
-    // display: flex;
+    // ]display: flex;
     // flex-direction: row;
     // background:white;
     color: black;
     font-size: 20px;
+
+    ${mediaQuery('mediumHandset')`
+
+    height: 0px;
+       `}
 `
 export const  Card = styled.div`
     background-color: var(--basewhite);
@@ -88,16 +95,18 @@ export const  CardBody = styled.div`
     //line-height: var(--text-m-regular-line-height);
     font-style: var(--text-m-regular-font-style);
 `
-export const  SpecialItem = styled.div`
+export const SpecialItem = styled.div`
     width: 352px;
     height: 196px;
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
     //padding: 10px;
+
+
 `
 
-export const  InnerItem = styled.div`
+export const InnerItem = styled.div`
     box-sizing: border-box;
     padding: 20px;
     color: white;
@@ -115,8 +124,18 @@ export const  InnerItem = styled.div`
         flex: 1 1 100%;
         text-align: center;
     }
+ 
 `
-export const  Img = styled.img`
+export const Img = styled.img`
     width: 48px;
     height: 48px;
+
+    ${mediaQuery('mediumHandset')`
+        display:none`}
+`
+
+export const ArrowImg = styled.img`
+    display: none;
+       ${mediaQuery('mediumHandset')`
+        display:none`}
 `

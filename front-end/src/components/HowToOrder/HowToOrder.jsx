@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import ElementImg3 from 'assets/element4.png'
 import ElementImg from 'assets/element.png'
 import ArrowFive from 'assets/vectors/arrow5.svg'
@@ -6,8 +5,22 @@ import ArrowSex from 'assets/vectors/arrow6.png'
 import ArrowSeven from 'assets/vectors/arrow7.svg'
 import Square from 'assets/vectors/square.svg'
 
-import{ HowItWorks, ComponentTitle , Content ,Column1 , Column2 , Column3 , Item , Card , CardHeader , CardTitle ,
-     CardBody , SpecialItem , InnerItem , Img} from "./HowToOrder.styles"
+import {
+    HowItWorks,
+    ComponentTitle,
+    Content,
+    Column,
+
+    Item,
+    Card,
+    CardHeader,
+    CardTitle,
+    CardBody,
+    SpecialItem,
+    InnerItem,
+    Img,
+    ArrowImg
+} from './HowToOrder.styles'
 
 const HowToOrder = () => {
     return (
@@ -15,7 +28,7 @@ const HowToOrder = () => {
             <HowItWorks>
                 <ComponentTitle>#order wherever you are</ComponentTitle>
                 <Content>
-                    <Column1>
+                    <Column>
                         <Item>
                             <Card>
                                 <CardHeader>
@@ -30,11 +43,10 @@ const HowToOrder = () => {
                         </Item>
 
                         <Item>
-                            <img src={ArrowSeven} />
+                            <ArrowImg src={ArrowSeven} />
                         </Item>
-                    </Column1>
-
-                    <Column2>
+                    </Column>
+                    <Column>
                         <Item>
                             <SpecialItem>
                                 <InnerItem>
@@ -45,7 +57,7 @@ const HowToOrder = () => {
                                 </InnerItem>
 
                                 <InnerItem>
-                                    <img
+                                    <ArrowImg
                                         src={ArrowFive}
                                         style={{ width: 200, height: 100 }}
                                     />
@@ -66,9 +78,8 @@ const HowToOrder = () => {
                                 </CardBody>
                             </Card>
                         </Item>
-                    </Column2>
-
-                    <Column3>
+                    </Column>
+                    <Column>
                         <Item>
                             <Card>
                                 <CardHeader>
@@ -84,12 +95,12 @@ const HowToOrder = () => {
                         </Item>
 
                         <Item>
-                            <img
+                            <ArrowImg
                                 src={ArrowSex}
                                 style={{ width: 200, height: 100 }}
                             />
                         </Item>
-                    </Column3>
+                    </Column>
                 </Content>
             </HowItWorks>
 
