@@ -6,6 +6,7 @@ import LoginFlow from './pages/LoginPage/LoginPage'
 import CheckoutPage from './pages/CheckoutPage'
 import styled from 'styled-components'
 import GlobalStyles from './styles/ GlobalStyles'
+import OrderPage from './pages/OrderPage'
 
 const Application = styled.div`
 overflow:hidden;
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/signin" element={<LoginFlow />} />
                     <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route path="/order" element={<OrderPage />} />
                 </Routes>
             </Router>
         </Application>
