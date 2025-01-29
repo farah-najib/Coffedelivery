@@ -1,26 +1,27 @@
  import styled from 'styled-components'
 
  const OrderDetailContainer = styled.div`
-    //  max-width: 600px;
-    //  margin: 0 auto;
-    //  padding: 2rem;
-    //  font-family: Arial, sans-serif;
-    //  color: #333;
+     //  max-width: 600px;
+     //  margin: 0 auto;
+     //  padding: 2rem;
+     //  font-family: Arial, sans-serif;
+     //  color: #333;
 
      position: absolute;
      //top: 50px; /* Adjust position from the top */
      //left: 50px; /* Adjust position from the left */
      width: 428px; /* Set width */
-     height: 100%; /* Set height */
+     height: 700px; /* Set height */
      font-family: Arial, sans-serif;
      padding: 20px;
      max-width: 400px;
      //margin: auto;
      border: 1px solid #ccc;
      border-radius: 8px;
-     margin: 0px 0 0 30px;
+     margin: 30px 0 0 100px;
      z-index: 31;
      background: pink;
+     overflow: scroll;
  `
 
  const Section = styled.div`
