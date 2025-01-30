@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Group15 = styled.div`
+export const LoginContainer = styled.div`
     position: relative;
     width: 352px;
     height: 552px;
@@ -10,7 +10,7 @@ export const Group15 = styled.div`
     overflow: visible auto;
 `
 
-export const WelcomeBack = styled.span`
+export const Containertitle = styled.span`
     display: block;
     position: relative;
     height: 42px;
@@ -38,13 +38,13 @@ export const EnterInformations = styled.span`
     z-index: 54;
 `
 
-export const AtomInput = styled.div`
+export const InputField = styled.div`
     position: relative;
     width: 351px;
     height: 68px;
-    margin: ${(props) => props.margin || '32px 0 0 1px'};
-    z-index: ${(props) => props.zIndex || 63};
-    overflow: visible auto;
+    //overflow: visible auto;
+
+
 `
 
 export const Label = styled.span`
@@ -73,23 +73,46 @@ export const Frame = styled.div`
     border: 1px solid #c8c8c8;
     border-radius: 8px;
     overflow: hidden;
+    background:purple;
 `
 
 export const Input = styled.input`
+    // flex-shrink: 0;
+    // position: absolute;
+    // width: 351px;
+    // height: 42px;
+    // top: -1px;
+    // left: -1px;
+    // background: transparent;
+    // border: none;
+    // outline: none;
+
     flex-shrink: 0;
-    position: absolute;
-    width: 351px;
+    position: relative; /* Change from absolute to relative */
+    width: 100%; /* Ensure it takes full width */
     height: 42px;
-    top: -1px;
-    left: -1px;
     background: transparent;
     border: none;
     outline: none;
+    border: 1px solid #c8c8c8;
+    border-radius: 8px;
+
 `
 
 export const Placeholder = styled.span`
+    // flex-shrink: 0;
+    // position: relative;
+    // height: 18px;
+    // color: #a7a7a7;
+    // font-family: Ruda, sans-serif;
+    // font-size: 14px;
+    // font-weight: 400;
+    // line-height: 18px;
+    // text-align: left;
+    // white-space: nowrap;
+
     flex-shrink: 0;
-    position: relative;
+    position: absolute;
     height: 18px;
     color: #a7a7a7;
     font-family: Ruda, sans-serif;
@@ -98,6 +121,7 @@ export const Placeholder = styled.span`
     line-height: 18px;
     text-align: left;
     white-space: nowrap;
+    pointer-events: none; /* Ensure it doesn't block input */
 `
 
 export const Button = styled.button`
