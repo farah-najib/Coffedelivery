@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ProductImg from 'assets/img/images/product19.png'
 
 const Card = styled.div`
     display: flex;
@@ -11,6 +12,7 @@ const Card = styled.div`
     height: 214px;
     border-radius: 16px;
     margin: 84px 0 0 160px;
+    background:pink;
 `
 
 const ImgProduct = styled.div`
@@ -19,7 +21,7 @@ const ImgProduct = styled.div`
     height: 104px;
     margin: -60px;
     top: 0px;
-    background: url(./assets/images/820404aa7446d73e56ae949340722246fcae03d7.png)
+    background: url(${ProductImg})
         no-repeat center;
     background-size: cover;
 `
