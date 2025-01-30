@@ -18,6 +18,13 @@ const deleteProduct = (req, res) => {
     res.status(200).json({ message: `Delete product ${req.params.id}` })
 }
 
+
+
+
+
+
+
+
 module.exports = {
     getProducts,
     setProduct,

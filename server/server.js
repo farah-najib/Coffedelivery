@@ -1,8 +1,14 @@
 const express = require("express");
+const connectDB = require('./db/db')
+const authRoutes = require('./routes/auth')
+const userRoutes = require('./routes/user')
+const request = require('request')
+const { errorHandler } = require('./middleware/errorMiddleware')
+
 const app = express();
 const port = 3000;
-const request = require("request");
-const { errorHandler } = require('./middleware/errorMiddleware')
+// Connect to MongoDB
+connectDB();
 
 // add these lines to accept req body for POST call
 app.use(express.json())
@@ -17,6 +23,12 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+
+// Define authentication routes
+app.use('/auth', authRoutes);
+
+// Define user routes
+app.use('/user', userRoutes);
 
 // app.get("/products", (req, res) => {
 //   request(
