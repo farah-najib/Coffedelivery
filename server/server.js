@@ -4,12 +4,15 @@ const authRoutes = require('./routes/auth')
 const userRoutes = require('./routes/user')
 const request = require('request')
 const { errorHandler } = require('./middleware/errorMiddleware')
+const cors = require('cors')
 
 const app = express();
 const port = 3000;
 // Connect to MongoDB
 connectDB();
-
+app.use(cors())
+// Allow requests from your frontend
+// app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
 // add these lines to accept req body for POST call
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
