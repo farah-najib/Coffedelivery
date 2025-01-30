@@ -7,9 +7,9 @@ import Vector from 'assets/vectors/vector1.png'
 import VectorTwo from 'assets/vectors/vector2.png'
 import VectorThree from 'assets/vectors/vector3.png'
 import VectorFour from 'assets/vectors/vector4.png'
-import SigninByAccount from 'src/components/SigninByAccount/SigninByAccount'
+
 import SignInByEmail from 'components/SigninByEmail/SigninByEmail'
-import Register from 'components/Register/Register'
+import Register from 'components/SigninByEmail/Register'
 import mediaQuery from 'styles/mediaQuery'
 
 const MainContainer = styled.div`
@@ -152,8 +152,8 @@ const loginFlow = () => {
     // Renders the correct form based on the state
     const renderForm = () => {
         switch (currentForm) {
-            case 'signin':
-                return <SigninByAccount setCurrentForm={setCurrentForm} />
+            // case 'signin':
+            //     return <SigninByAccount setCurrentForm={setCurrentForm} />
             case 'email':
                 return <SignInByEmail setCurrentForm={setCurrentForm} />
             case 'register':
