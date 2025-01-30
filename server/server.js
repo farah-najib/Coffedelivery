@@ -6,18 +6,32 @@ const request = require('request')
 const { errorHandler } = require('./middleware/errorMiddleware')
 const cors = require('cors')
 
+
+
+
+const productRoutes = require('./routes/products')
+
+
+
+
 const app = express();
 const port = 3000;
+
 // Connect to MongoDB
 connectDB();
+
 app.use(cors())
 // Allow requests from your frontend
 // app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
 // add these lines to accept req body for POST call
 app.use(express.json())
+// Serve static files (images)
+app.use('/public', express.static('public'));
+
 app.use(express.urlencoded({extended: false}))
 app.use(errorHandler)
 app.use('/api/products', require('./routes/productRoutes'))
+app.use('/api/products2', productRoutes)
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
