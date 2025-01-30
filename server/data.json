@@ -1,0 +1,184 @@
+{
+    "products": [
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_1.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_2.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_3.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_4.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_5.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_6.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_7.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_8.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_9.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_10.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_11.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_12.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_13.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_14.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_15.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_16.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_17.jpg"
+        },
+        {
+            "name": "Expresso Tradicional",
+            "description": "The traditional coffee made with hot water and ground grains",
+            "tags": ["Tradicional", "Tradicional"],
+            "price": {
+                "currency": "CAD$",
+                "amount": 9.9
+            },
+            "image": "/public/images/expresso_tradicional_18.jpg"
+        }
+    ]
+}
