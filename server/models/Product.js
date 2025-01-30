@@ -9,7 +9,9 @@ const productSchema = new mongoose.Schema({
         currency: { type: String, required: true },
         amount: { type: Number, required: true }
     },
-    image: { type: String, required: true }
+    image: { type: String, required: true },
+    popular: { type: Boolean, default: false }
+
 })
 
 module.exports = mongoose.model('Product', productSchema)
