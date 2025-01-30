@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import ProductImg from 'assets/img/images/product19.png'
-
+//import ProductImg from 'assets/img/images/product19.png'
+import { API_BASE_URL, fetchProducts } from '../../utils/api'
+import { useEffect, useState } from 'react'
 const Card = styled.div`
     display: flex;
     flex-direction: column;
@@ -15,14 +16,13 @@ const Card = styled.div`
     background:pink;
 `
 
-const ImgProduct = styled.div`
+const ImgProduct = styled.img`
     position: absolute;
     width: 104px;
     height: 104px;
     margin: -60px;
     top: 0px;
-    background: url(${ProductImg})
-        no-repeat center;
+    no-repeat center;
     background-size: cover;
 `
 
@@ -150,25 +150,44 @@ const AddButton = styled.button`
 `
 
 const ProductCard = () => {
+     const [products, setProducts] = useState([])
+
+     useEffect(() => {
+         const getProducts = async () => {
+             try {
+                 const data = await fetchProducts()
+                 setProducts(data)
+             } catch (error) {
+                 console.error('Failed to fetch posts')
+             }
+         }
+
+         getProducts()
+     }, [])
     return (
-        <Card>
-            <ImgProduct />
-            <Tags>
-                <ButtonTag>Tradicional</ButtonTag>
-                <ButtonTag>Tradicional</ButtonTag>
-            </Tags>
-            <ProductName>Expresso Tradicional</ProductName>
-            <Description>
-                The traditional coffee made with hot water and ground grains
-            </Description>
-            <FlexRow>
-                <PriceContainer>
-                    <Currency>CAD$</Currency>
-                    <Price>9.90</Price>
-                </PriceContainer>
-                <AddButton>Add order</AddButton>
-            </FlexRow>
-        </Card>
+        <>
+            {products.map((product) => (
+                <Card key={product._id}>
+                    <ImgProduct src={`${API_BASE_URL}${product.image}`} />
+                    <Tags>
+                        <ButtonTag>{product.title}</ButtonTag>
+                        <ButtonTag>Tradicional</ButtonTag>
+                    </Tags>
+                    <ProductName>Expresso Tradicional</ProductName>
+                    <Description>
+                        The traditional coffee made with hot water and ground
+                        grains
+                    </Description>
+                    <FlexRow>
+                        <PriceContainer>
+                            <Currency>CAD$</Currency>
+                            <Price>9.90</Price>
+                        </PriceContainer>
+                        <AddButton>Add order</AddButton>
+                    </FlexRow>
+                </Card>
+            ))}
+        </>
     )
 }
 
