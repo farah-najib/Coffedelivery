@@ -3,6 +3,7 @@ const connectDB = require('./db/db')
 const authRoutes = require('./routes/auth')
 const userRoutes = require('./routes/user')
 const request = require('request')
+//const path = require('path')
 const { errorHandler } = require('./middleware/errorMiddleware')
 const cors = require('cors')
 
@@ -26,7 +27,9 @@ app.use(cors())
 // add these lines to accept req body for POST call
 app.use(express.json())
 // Serve static files (images)
-app.use('/public', express.static('public'));
+ app.use('/public', express.static('public'));
+// Serve static files correctly
+//app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 app.use(express.urlencoded({extended: false}))
 app.use(errorHandler)
@@ -40,6 +43,12 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+
+// app.get('/test-image', (req, res) => {
+//     res.sendFile(
+//         path.join(__dirname, 'public/images/expresso_tradicional_2.png')
+//     )
+// })
 
 // Define authentication routes
 app.use('/auth', authRoutes);

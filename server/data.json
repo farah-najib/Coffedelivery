@@ -8,7 +8,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_1.jpg"
+            "image": "/public/images/expresso_tradicional_1.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -18,7 +19,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_2.jpg"
+            "image": "/public/images/expresso_tradicional_2.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -28,7 +30,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_3.jpg"
+            "image": "/public/images/expresso_tradicional_3.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -38,7 +41,7 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_4.jpg"
+            "image": "/public/images/expresso_tradicional_4.png"
         },
         {
             "name": "Expresso Tradicional",
@@ -48,7 +51,7 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_5.jpg"
+            "image": "/public/images/expresso_tradicional_5.png"
         },
         {
             "name": "Expresso Tradicional",
@@ -58,7 +61,7 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_6.jpg"
+            "image": "/public/images/expresso_tradicional_6.png"
         },
         {
             "name": "Expresso Tradicional",
@@ -68,7 +71,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_7.jpg"
+            "image": "/public/images/expresso_tradicional_7.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -78,7 +82,7 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_8.jpg"
+            "image": "/public/images/expresso_tradicional_8.png"
         },
         {
             "name": "Expresso Tradicional",
@@ -88,7 +92,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_9.jpg"
+            "image": "/public/images/expresso_tradicional_9.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -98,7 +103,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_10.jpg"
+            "image": "/public/images/expresso_tradicional_10.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -108,7 +114,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_11.jpg"
+            "image": "/public/images/expresso_tradicional_11.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -118,7 +125,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_12.jpg"
+            "image": "/public/images/expresso_tradicional_12.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -128,7 +136,7 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_13.jpg"
+            "image": "/public/images/expresso_tradicional_13.png"
         },
         {
             "name": "Expresso Tradicional",
@@ -138,7 +146,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_14.jpg"
+            "image": "/public/images/expresso_tradicional_14.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -148,7 +157,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_15.jpg"
+            "image": "/public/images/expresso_tradicional_15.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -158,7 +168,7 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_16.jpg"
+            "image": "/public/images/expresso_tradicional_16.png"
         },
         {
             "name": "Expresso Tradicional",
@@ -168,7 +178,8 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_17.jpg"
+            "image": "/public/images/expresso_tradicional_17.png",
+            "popular": true
         },
         {
             "name": "Expresso Tradicional",
@@ -178,7 +189,7 @@
                 "currency": "CAD$",
                 "amount": 9.9
             },
-            "image": "/public/images/expresso_tradicional_18.jpg"
+            "image": "/public/images/expresso_tradicional_18.png"
         }
     ]
 }
