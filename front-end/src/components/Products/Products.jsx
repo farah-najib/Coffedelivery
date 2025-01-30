@@ -1,6 +1,5 @@
 import ProductPlaceholder from 'assets/product-placeholder.png'
-
- import{OurProducts ,
+import{OurProducts ,
  ComponentTitle ,
  ProductList ,
  ProductItem,
@@ -9,29 +8,40 @@ import ProductPlaceholder from 'assets/product-placeholder.png'
  Price ,
  Name ,Detail } from "./Products.styles"
 
+import { API_BASE_URL, fetchProducts } from '../../utils/api'
+import { useEffect, useState } from 'react'
+
  const Products = () => {
-     const product = {
-        id: 'expressoCoffee',
-        name: 'Expresso Coffee',
-        description:
-            'Lorem ipsum dolor sit amet consectetur. Acondiment mi velit imperdiet cras cras in',
-        price: 9.99,
-        currency: 'USD',
-        quantity: 6
-    }
+   const [products, setProducts] = useState([])
+
+   useEffect(() => {
+       const getProducts = async () => {
+           try {
+               const data = await fetchProducts()
+               setProducts(data)
+           } catch (error) {
+               console.error('Failed to fetch posts')
+           }
+       }
+
+       getProducts()
+   }, [])
     return (
         <OurProducts id="menu">
             <ComponentTitle>#Our products</ComponentTitle>
 
             <ProductList>
-                {Array.from({ length: product.quantity }).map((_, index) => (
-                    <ProductItem key={`${product.id}-${index}`}>
-                        <Image src={ProductPlaceholder} alt={product.name} />
+                {products.map((product) => (
+                    <ProductItem key={product._id}>
+                        <Image
+                            src={`${API_BASE_URL}${product.image}`}
+                            alt={product.name}
+                        />
                         <Description>
                             <Name>{product.name}</Name>
                             <Detail>{product.description}</Detail>
                         </Description>
-                        <Price>{`$${product.price.toFixed(2)}`}</Price>
+                        <Price>{`${product.price.amount.toFixed(2)}`}</Price>
                     </ProductItem>
                 ))}
             </ProductList>
