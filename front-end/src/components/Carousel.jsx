@@ -9,17 +9,7 @@ import CoffeeBag from 'assets/coffeebag.png'
 import CoffeeCup from 'assets/flat.png'
 
 const CarouselWrapper = styled.div`
-    .flickity-viewport {
-        border-radius: 12px;
-    }
-    .carousel-cell {
-        width: 60%;
-        margin-right: 10px;
-        background: #f3f3f3;
-        border-radius: 10px;
-        text-align: center;
-        padding: 20px;
-    }
+   
 `
 
 const Carousel = () => {
@@ -87,7 +77,7 @@ const Carousel = () => {
                     showCupBag={false}
                 />
 
-                <SponsoredCard
+                  <SponsoredCard
                     bgColor="#385338" // Background color of the card
                     showRightRound={false} // Toggle right-round image visibility
                     cardimg={false}
@@ -107,6 +97,8 @@ const Carousel = () => {
                         cupLeft: '90px'
                     }}
                 />
+
+
             </div>
         </CarouselWrapper>
     )
