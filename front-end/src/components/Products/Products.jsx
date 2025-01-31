@@ -1,4 +1,4 @@
-import ProductPlaceholder from 'assets/product-placeholder.png'
+
 import{OurProducts ,
  ComponentTitle ,
  ProductList ,

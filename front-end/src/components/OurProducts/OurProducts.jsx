@@ -2,6 +2,16 @@ import styled from 'styled-components'
 //import ProductImg from 'assets/img/images/product19.png'
 import { API_BASE_URL, fetchProducts } from '../../utils/api'
 import { useEffect, useState } from 'react'
+const Container = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows, height based on content */
+    gap: 10px;
+    width: auto;
+    height: 677px;
+    //overflow:hidden;
+    overflow: scroll;
+`
 const Card = styled.div`
     display: flex;
     flex-direction: column;
@@ -165,7 +175,7 @@ const ProductCard = () => {
          getProducts()
      }, [])
     return (
-        <>
+        <Container>
             {products.map((product) => (
                 <Card key={product._id}>
                     <ImgProduct src={`${API_BASE_URL}${product.image}`} />
@@ -187,7 +197,7 @@ const ProductCard = () => {
                     </FlexRow>
                 </Card>
             ))}
-        </>
+        </Container>
     )
 }
 
