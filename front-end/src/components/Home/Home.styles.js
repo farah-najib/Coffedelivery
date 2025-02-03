@@ -15,10 +15,11 @@ export const BannerContainer = styled.div`
     justify-content: center;
     overflow: hidden;
 
+
 `
 export const BannerFooter = styled.footer`
     position: absolute;
-    bottom: 0; /* Position the footer at the bottom of the container */
+    bottom: 0;
     width: 100%;
     ${mediaQuery('mediumHandset')``}
 `
@@ -148,17 +149,15 @@ export const Cappuccino = styled.div`
 `
 
 export const Content = styled.div`
-    width: 100%;
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 927px;
+    width: 100%;
     height: 234px;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 150px;
+
+
+
 
     ${mediaQuery('mediumHandset')`
  width:400px;
@@ -231,8 +230,8 @@ export const Arrow1 = styled.div`
     height: 95px;
     background: url(${ArrowImg1});
     background-size: cover;
-    top: 100px;
-    left: 805px;
+    top: 200px;
+    left: 1000px;
 `
 
 export const Arrow2 = styled.div`
@@ -241,6 +240,6 @@ export const Arrow2 = styled.div`
     height: 228px;
     background: url(${ArrowImg2});
     background-size: cover;
-    top: 17px;
-    left: -50px;
+    top: 100px;
+    left: 0px;
 `

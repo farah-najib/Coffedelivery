@@ -3,7 +3,7 @@ import Logo from 'assets/logo-img/logo1.png'
 
 export const HeaderContainer = styled.nav`
     height: 4.813rem;
-    background-color: #f9f4e6;
+   // background-color: #f9f4e6;
     display: flex;
     justify-content: space-between;
     align-items: center;

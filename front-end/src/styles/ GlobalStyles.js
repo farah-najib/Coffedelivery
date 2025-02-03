@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+
  * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,9 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: 'Halant';
+  font-weight: 400;
+  font-style: normal;
   }
 
   body{
