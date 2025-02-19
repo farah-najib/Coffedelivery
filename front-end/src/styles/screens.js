@@ -1,6 +1,6 @@
 const screens = {
     wideDesktop: 1920,
-    desktop: 1280,
+    desktop: 1440,
     smallDesktop: 1024,
     largeTablet: 768,
     mediumHandset: 412, // Add mobile breakpoint for 412px
