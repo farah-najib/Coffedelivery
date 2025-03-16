@@ -8,7 +8,7 @@ import VectorTwo from 'assets/vectors/vector2.png'
 import VectorThree from 'assets/vectors/vector3.png'
 import VectorFour from 'assets/vectors/vector4.png'
 
-import SignInByEmail from 'components/SigninByEmail/SigninByEmail'
+import SignInByEmail from 'src/components/SigninByEmail/Signin'
 import Register from 'components/SigninByEmail/Register'
 import mediaQuery from 'styles/mediaQuery'
 import CupBagComponent from 'src/components/CupBagComponent'

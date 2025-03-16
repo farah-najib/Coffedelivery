@@ -52,15 +52,15 @@ export const StepDescription = styled.div``
 
 export const Column1 = styled.div`
     height: 100%;
-    background: blue;
+    
 `
 export const Column2 = styled.div`
     height: 100%;
-    background: rgb(175, 76, 149);
+
 `
 export const Column3 = styled.div`
     height: 100%;
-    background: green;
+
 `
 export const ColdBeverageImg = styled.div`
     width: 191px;
