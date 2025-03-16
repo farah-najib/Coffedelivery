@@ -14,43 +14,49 @@ export const BannerContainer = styled.div`
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    ${mediaQuery('desktop')`
 
 
+        `}
 `
 export const BannerFooter = styled.footer`
     position: absolute;
     bottom: 0;
     width: 100%;
-    ${mediaQuery('mediumHandset')``}
+    ${mediaQuery('desktop')`
+
+   `}
 `
-
 export const CoffeeBean = styled.div`
-    width: 100%;
-    height: 241px;
-    display: flex;
+    ${mediaQuery('desktop')`
+         width: 100%;
+         height: 241px;
+         display: flex;
 
-
+        `}
 `
 export const Cloumn1 = styled.div`
+    ${mediaQuery('desktop')`
     width: 547px;
     height: 241px;
-    display: flex;
+    display: flex;`}
 `
 export const CoffeeBeanImg = styled.div`
-    position: relative;
+    position: absolute;
     width: 299px;
     height: 176px;
     background: url(${Coffeebeans});
     background-size: cover;
     animation: float 6s ease-in-out infinite;
 
-    ${mediaQuery('mediumHandset')`
-      width: 192px;
-      height: 125px;
-  `}
+    ${mediaQuery('desktop')`
+     position: relative;
+
+
+        `}
 `
 export const CoffeeBeanImg2 = styled.div`
-    position: relative;
+    position: absolute;
     width: 299px;
     height: 176px;
     background: url(${Coffeebeans});
@@ -76,28 +82,34 @@ export const CoffeeBeanImg2 = styled.div`
         }
     }
 
-    ${mediaQuery('mediumHandset')`
-      width: 192px;
-  height: 125px;
-  `}
+    ${mediaQuery('desktop')`
+    position: relative;
+
+     `}
 `
 export const Cloumn2 = styled.div`
+    ${mediaQuery('desktop')`
     width: 547px;
     height: 241px;
     display: flex;
+
+        `}
 `
 export const Cloumn3 = styled.div`
+    ${mediaQuery('desktop')`
     width: 547px;
     height: 241px;
     display: flex;
+        `}
 `
 
 export const Cup = styled.div`
+    ${mediaQuery('desktop')`
     position: absolute;
     top: -50%;
     padding: 10px;
 
-
+        `}
 `
 
 export const Latte = styled.div`
@@ -110,16 +122,12 @@ export const Latte = styled.div`
     background-position: 50% 50%;
     background: url(${ElementImg3});
     background-size: cover;
+    ${mediaQuery('desktop')`
+    position: absolute;
 
-    ${mediaQuery('mediumHandset')`
-        width:168px;
-        height:168px;
-        top:0;
-        left: 0px;
-  `}
+
+        `}
 `
-
-
 
 export const Americano = styled.div`
     position: absolute;
@@ -129,9 +137,11 @@ export const Americano = styled.div`
     left: 331px;
     background: url(${ElementImg2});
     background-size: cover;
-    ${mediaQuery('mediumHandset')`
-  display: none;
-  `}
+    ${mediaQuery('desktop')`
+position: absolute;
+
+
+        `}
 `
 
 export const Cappuccino = styled.div`
@@ -143,12 +153,15 @@ export const Cappuccino = styled.div`
     object-fit: cover;
     background: url(${ElementImg});
     background-size: cover;
-    ${mediaQuery('mediumHandset')`
-  display: none;
-  `}
+    ${mediaQuery('desktop')`
+    position: absolute;
+
+
+        `}
 `
 
 export const Content = styled.div`
+    ${mediaQuery('desktop')`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,19 +169,11 @@ export const Content = styled.div`
     width: 100%;
     height: 234px;
 
-
-
-
-    ${mediaQuery('mediumHandset')`
- width:400px;
- height:449px;
- margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-  `}
+        `}
 `
 
 export const Title = styled.div`
+    ${mediaQuery('desktop')`
     font-family: 'Halant';
     font-weight: 700;
     font-size: 48px;
@@ -182,11 +187,13 @@ export const Title = styled.div`
     .lovely {
         color: #ba2d0b;
     }
-
+ `}
 `
 
 export const Description = styled.p`
-    font-family: var(--text-l-regular-font-family);
+    ${mediaQuery('desktop')`
+
+            font-family: var(--text-l-regular-font-family);
     font-weight: var(--text-l-regular-font-weight);
     color: var(--base-600);
     font-size: var(--text-l-regular-font-size);
@@ -194,9 +201,12 @@ export const Description = styled.p`
     letter-spacing: var(--text-l-regular-letter-spacing);
     line-height: var(--text-l-regular-line-height);
     font-style: var(--text-l-regular-font-style);
+
+        `}
 `
 
 export const Button = styled.button`
+    ${mediaQuery('desktop')`
     width: 196px;
     height: 42px;
     background: var(--green-500);
@@ -208,7 +218,6 @@ export const Button = styled.button`
     position: relative;
     background-color: var(--green-600);
     border-radius: 8px;
-
     .text-button {
         color: #ffffff;
         font-size: var(--text-s-bold-font-size);
@@ -222,24 +231,39 @@ export const Button = styled.button`
         white-space: nowrap;
         font-style: var(--text-s-bold-font-style);
     }
+
+
+        `}
 `
 
 export const Arrow1 = styled.div`
-    position: absolute;
+    position: none;
     width: 336px;
     height: 95px;
     background: url(${ArrowImg1});
     background-size: cover;
     top: 200px;
     left: 1000px;
+
+    ${mediaQuery('desktop')`
+    position: absolute;
+
+
+        `}
 `
 
 export const Arrow2 = styled.div`
-    position: absolute;
+    position: none;
     width: 95px;
     height: 228px;
     background: url(${ArrowImg2});
     background-size: cover;
     top: 100px;
     left: 0px;
+
+    ${mediaQuery('desktop')`
+    position: absolute;
+
+
+        `}
 `

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import Logo from 'assets/logo-img/logo1.png'
-
+import mediaQuery from 'styles/mediaQuery'
 export const HeaderContainer = styled.nav`
     height: 4.813rem;
-   // background-color: #f9f4e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 `
 export const HeaderLogo = styled.a`
     display: block;
@@ -16,12 +16,14 @@ export const HeaderLogo = styled.a`
     background-repeat: no-repeat;
     background-size: contain;
     float: left;
-    padding: 10px 20px;
+    margin: 10px 20px;
 `
 
 export const SearchWrapper = styled.div`
-    display: flex;
-    align-items: center;
+    display: none;
+    ${mediaQuery('desktop')`
+         display: flex;
+         align-items: center;`}
 `
 
 export const SearchIcon = styled.i`
@@ -57,7 +59,7 @@ export const NavLinks = styled.ul`
         flex-direction: column;
         background-color: #252525;
         align-items: center;
-        display: ${(props) => (props.show ? 'flex' : 'none')};
+        //display: ${(props) => (props.show ? 'flex' : 'none')};
         padding-top: 60px;
     }
 `
@@ -69,32 +71,40 @@ export const Link = styled.li`
         display: inline-block;
         padding: 10px 20px;
         &:hover {
-
         }
-        @media screen and (max-width: 768px) {
+
             margin-bottom: 10px;
             display: block;
-        }
+
     }
+
+    ${mediaQuery('desktop')`
+    d
+        `}
 `
 
 export const MenuBtn = styled.div`
-    display: none;
+    display: block;
     position: absolute;
     color: black;
     top: 10px;
     right: 30px;
     font-size: 2rem;
     cursor: pointer;
+    ${mediaQuery('desktop')`
+        display:none;
+        `}
 
-    @media screen and (max-width: 768px) {
-        display: block;
-    }
 `
 
-export const  SigninButton = styled.button`
+export const SigninButton = styled.button`
+    display: none;
+    position: relative;
     background-color: var(--green-600);
     border-radius: 8px;
     color: black;
     padding: 8px 16px;
+    ${mediaQuery('desktop')`
+        display:block;
+        `}
 `

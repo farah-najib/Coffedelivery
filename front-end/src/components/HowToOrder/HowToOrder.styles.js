@@ -8,9 +8,6 @@ export const  HowItWorks = styled.div`
     background-color: #c8aaaa;
     background-size: cover;
     background-position: 50% 50%;
-    // display:flex;
-    // flex-direction:column;
-    // justify-content:center;
 `
 
 export const  ComponentTitle = styled.div`
@@ -39,14 +36,12 @@ export const Content = styled.div`
 
         display:flex;
         flex-direction:column;
-         padding-top: 0px;
-    padding-left: 0px;
-    gap:0px;
+        padding-top: 0px;
+        padding-left: 0px;
+        gap:0px;
         `}
 `
 export const Column = styled.div`
-    //height:196px
-    //background: blue;
     ${mediaQuery('mediumHandset')`
 
         height:196px
@@ -57,9 +52,6 @@ export const Item = styled.div`
     width: 352px;
     height: 196px;
     object-fit: cover;
-    // ]display: flex;
-    // flex-direction: row;
-    // background:white;
     color: black;
     font-size: 20px;
 
@@ -102,8 +94,6 @@ export const SpecialItem = styled.div`
     flex-wrap: wrap;
     gap: 1px;
     //padding: 10px;
-
-
 `
 
 export const InnerItem = styled.div`
@@ -124,7 +114,7 @@ export const InnerItem = styled.div`
         flex: 1 1 100%;
         text-align: center;
     }
- 
+
 `
 export const Img = styled.img`
     width: 48px;
@@ -135,7 +125,7 @@ export const Img = styled.img`
 `
 
 export const ArrowImg = styled.img`
-    display: none;
+   
        ${mediaQuery('mediumHandset')`
         display:none`}
 `

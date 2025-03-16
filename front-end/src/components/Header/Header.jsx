@@ -20,7 +20,8 @@ const navLinks = [
     { href: '#menu', label: 'Menu' },
     { href: '#schedule', label: 'Schedule' }
 ]
-const Header = ({type='default'}) => {
+//{type='default'}
+const Header = () => {
     const navigate = useNavigate()
 
     const handleSignInClick = () => {
@@ -40,7 +41,7 @@ const Header = ({type='default'}) => {
          console.log('Search value:', searchValue)
          // Perform search or navigation logic here
      }
-     if (type === 'logged'){return(<></>)}
+    //  if (type === 'logged'){return(<></>)}
     return (
         <HeaderContainer>
             <HeaderLogo href="#home" />
@@ -62,8 +63,8 @@ const Header = ({type='default'}) => {
                             placeholder="Search..."
                             value={searchValue}
                             onChange={(e) => setSearchValue(e.target.value)}
-                            onBlur={() => setIsSearchOpen(false)} // Close input on blur
-                            autoFocus // Automatically focus the input
+                            onBlur={() => setIsSearchOpen(false)}
+                            autoFocus
                         />
                     </form>
                 ) : (

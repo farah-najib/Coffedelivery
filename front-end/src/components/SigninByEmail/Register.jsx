@@ -7,7 +7,7 @@ import {
     Input,
     Button,
     NewAccount
-} from './SigninByEmail.styles'
+} from './Signin-up.styles'
 
 const Register = ({ setCurrentForm }) => {
     return (
