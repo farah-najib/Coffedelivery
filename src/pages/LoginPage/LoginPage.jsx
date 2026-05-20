@@ -11,14 +11,14 @@ import VectorFour from 'assets/vectors/vector4.png'
 import SignInByEmail from 'src/components/SigninByEmail/Signin'
 import Register from 'components/SigninByEmail/Register'
 import mediaQuery from 'styles/mediaQuery'
-import CupBagComponent from 'src/components/CupBagComponent'
 const MainContainer = styled.div`
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    ${mediaQuery('mediumHandset')`
+    width: 100%;
+    min-height: 100vh;
+    background: var(--cream-100);
+    overflow-x: hidden;
+    ${mediaQuery('smallDesktop', 'max')`
 
         flex-direction: column;
       `}
@@ -26,13 +26,16 @@ const MainContainer = styled.div`
 
 const FlexRowB = styled.div`
     position: relative;
-    width: 704px;
-    height: 100%;
+    flex: 0 0 min(49vw, 704px);
+    min-height: 100vh;
     background: url(${GreenBg});
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
-    ${mediaQuery('mediumHandset')`
+    ${mediaQuery('smallDesktop', 'max')`
 
         display:none;
       `}
@@ -48,7 +51,7 @@ const TextArea = styled.div`
 `
 
 const ImageArea = styled.div`
-    width: 704px;
+    width: 100%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -133,6 +136,10 @@ const Vector3 = styled.div`
     background: url(${VectorThree}) no-repeat center;
     background-size: cover;
     border-radius: 50%;
+
+    ${mediaQuery('smallDesktop', 'max')`
+        display: none;
+    `}
 `
 
 const Vector4 = styled.div`
@@ -143,9 +150,13 @@ const Vector4 = styled.div`
     left: 621px;
     background: url(${VectorFour}) no-repeat center;
     background-size: cover;
+
+    ${mediaQuery('smallDesktop', 'max')`
+        display: none;
+    `}
 `
 
-const loginFlow = () => {
+const LoginFlow = () => {
 
     const [currentForm, setCurrentForm] = useState('register') // Default form
 
@@ -189,4 +200,4 @@ const loginFlow = () => {
         </MainContainer>
     )
 }
-export default loginFlow
+export default LoginFlow

@@ -19,7 +19,7 @@ import { useEffect, useState } from 'react'
            try {
                const data = await fetchProducts()
                setProducts(data)
-           } catch (error) {
+           } catch {
                console.error('Failed to fetch posts')
            }
        }

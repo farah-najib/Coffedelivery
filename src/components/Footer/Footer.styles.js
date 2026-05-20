@@ -2,16 +2,19 @@ import styled from 'styled-components'
 import BackgroundImg from 'assets/bkfooter.png'
 export const FooterContainer = styled.footer`
     position: relative;
-    width: 1441px;
-    height: 533px;
+    width: 100%;
+    min-height: 420px;
     background-image: url(${BackgroundImg});
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    padding: 40px;
+    padding: clamp(3rem, 7vw, 5rem) clamp(1rem, 5vw, 5rem);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-family: 'Arial', sans-serif;
+    gap: 1.5rem;
+    font-family: var(--text-s-regular-font-family);
 `
 
 export const Column = styled.div`
@@ -28,14 +31,14 @@ export const Column = styled.div`
     p,
     a {
         font-size: 14px;
-        color: #aaa;
+        color: var(--cream-300);
         text-decoration: none;
         margin-bottom: 5px;
         display: block;
     }
 
     a:hover {
-        color: #fff;
+        color: var(--cream-100);
     }
 `
 
@@ -54,17 +57,17 @@ export const NewsletterContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 259px;
-    height: 97px;
+    width: min(259px, 100%);
 `
 export const Input = styled.input`
-    width: 259px;
+    width: 100%;
     height: 42px;
-    // align-items: center;
     gap: 10px;
-    border-radius: 8px;
+    border-radius: 999px;
     border: 1px solid;
-    border-color: var(--base-400);
+    border-color: rgba(255, 248, 239, 0.35);
+    background: rgba(255, 255, 255, 0.92);
+    padding: 0 1rem;
 `
 
 export const Button = styled.button`
@@ -72,10 +75,11 @@ export const Button = styled.button`
     padding: 12px 24px;
     width: 124px;
     height: 42px;
-    background-color: var(--basewhite);
+    background-color: var(--cream-100);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    color: black;
+    border-radius: 999px;
+    color: var(--coffee-900);
+    font-weight: 700;
 `

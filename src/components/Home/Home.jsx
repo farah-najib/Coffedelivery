@@ -20,7 +20,7 @@ import {
 
 const Home = () => {
     return (
-        <BannerContainer id="#Home">
+        <BannerContainer id="Home">
             <Content>
                 <Title>
                     <span className="craving-the-perfect">

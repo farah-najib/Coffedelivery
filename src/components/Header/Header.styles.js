@@ -2,24 +2,28 @@ import styled from 'styled-components'
 import Logo from 'assets/logo-img/logo1.png'
 import mediaQuery from 'styles/mediaQuery'
 
-// 🟩 Header Container
 export const HeaderContainer = styled.nav`
-  height: 4.813rem;
+  min-height: 4.813rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  position: relative;
-  z-index: 10;
+  padding: 0.75rem clamp(1rem, 5vw, 5rem);
+  background-color: rgba(255, 248, 239, 0.92);
+  border-bottom: 1px solid rgba(111, 66, 39, 0.1);
+  backdrop-filter: blur(18px);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+
+  ${mediaQuery('smallDesktop', 'max')`
+    min-height: 4.5rem;
+  `}
 `
 
-// 🟦 Logo
 export const HeaderLogo = styled.a`
   display: block;
-  width: 63px;
-  height: 45px;
+  width: 76px;
+  height: 52px;
   background-image: url(${Logo});
   background-repeat: no-repeat;
   background-size: contain;
@@ -27,9 +31,9 @@ export const HeaderLogo = styled.a`
   margin: 10px 0;
 `
 
-// 🟨 Search Bar Wrapper
 export const SearchWrapper = styled.div`
   display: none;
+  gap: 0.75rem;
 
   ${mediaQuery('smallDesktop')`
     display: flex;
@@ -37,103 +41,116 @@ export const SearchWrapper = styled.div`
   `}
 `
 
-// 🔍 Search Icon
 export const SearchIcon = styled.i`
-  font-size: 1.5rem;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cream-200);
+  color: var(--coffee-800);
+  font-size: 1rem;
   cursor: pointer;
-  margin-right: 10px;
 `
 
-// ✏️ Search Input
 export const SearchInput = styled.input`
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(111, 66, 39, 0.18);
+  border-radius: 999px;
   outline: none;
   width: 200px;
   transition: width 0.3s ease;
-  font-size: 1rem;
-  background-color: #fff;
+  font-size: 0.9rem;
+  background-color: var(--basewhite);
+  color: var(--coffee-900);
 
   &:focus {
     width: 250px;
-    border-color: #007bff;
+    border-color: var(--coffee-500);
   }
 `
 
-// 🧭 Navigation Links
 export const NavLinks = styled.ul`
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: clamp(0.25rem, 2vw, 1.25rem);
 
-  ${mediaQuery('largeTablet', 'max')`
+  ${mediaQuery('smallDesktop', 'max')`
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 4.813rem;
+    top: 4.5rem;
     left: 0;
     width: 100%;
-    background-color: #252525;
+    background-color: var(--coffee-900);
     padding: 2rem 0;
     display: ${(props) => (props.show ? 'flex' : 'none')};
     transition: all 0.3s ease-in-out;
   `}
 `
 
-// 🧩 Each Link Item
 export const Link = styled.li`
   a {
-    color: black;
+    color: var(--coffee-800);
     text-decoration: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 14px;
+    font-family: var(--text-s-bold-font-family);
+    font-weight: var(--text-s-bold-font-weight);
+    font-size: 14px;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #007bff;
+      color: var(--red-500);
     }
   }
 
-  ${mediaQuery('largeTablet', 'max')`
+  ${mediaQuery('smallDesktop', 'max')`
     a {
-      color: white;
+      color: var(--cream-100);
       display: block;
       text-align: center;
+      min-width: 10rem;
     }
   `}
 `
 
-// 🍔 Mobile Menu Button
 export const MenuBtn = styled.div`
   display: block;
   position: absolute;
-  color: black;
-  top: 12px;
-  right: 30px;
-  font-size: 2rem;
+  color: var(--coffee-900);
+  top: 18px;
+  right: 24px;
+  font-size: 1.75rem;
   cursor: pointer;
   z-index: 20;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
 
   ${mediaQuery('smallDesktop')`
     display: none;
   `}
 `
 
-// 🔐 Sign-in Button
 export const SigninButton = styled.button`
   display: none;
-  background-color: var(--green-600, #4caf50);
-  border-radius: 8px;
+  background-color: var(--coffee-800);
+  border-radius: 999px;
   border: none;
-  color: white;
-  padding: 8px 16px;
+  color: var(--cream-100);
+  padding: 11px 20px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: var(--drop-2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
 
   &:hover {
-    background-color: #43a047;
+    background-color: var(--red-500);
+    transform: translateY(-1px);
   }
 
   ${mediaQuery('smallDesktop')`

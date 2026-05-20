@@ -10,8 +10,9 @@ import OrderPage from './pages/OrderPage'
 import ProductsPage from './pages/ProductsPage'
 
 const Application = styled.div`
-overflow:hidden;
-
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
 `
 function App() {
     return (

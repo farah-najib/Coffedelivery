@@ -2,12 +2,27 @@ import styled from 'styled-components'
 
 export const LoginContainer = styled.div`
     position: relative;
-    width: 352px;
-    height: 552px;
-    margin: 174px 0 0 96px;
-    font-size: 0px;
+    width: min(420px, calc(100% - 2rem));
+    min-height: auto;
+    margin: auto;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background: var(--basewhite);
+    border: 1px solid rgba(111, 66, 39, 0.1);
+    border-radius: 24px;
+    box-shadow: var(--drop-card);
+    font-size: 14px;
     z-index: 51;
-    overflow: visible auto;
+    overflow: visible;
+
+    @media (max-width: 1024px) {
+        margin: 3rem auto;
+    }
+
+    @media (max-width: 480px) {
+        width: calc(100% - 2rem);
+        padding: 1.25rem;
+        border-radius: 18px;
+    }
 `
 
 export const Containertitle = styled.span`
@@ -22,6 +37,10 @@ export const Containertitle = styled.span`
     text-align: left;
     white-space: nowrap;
     z-index: 52;
+
+    @media (max-width: 480px) {
+        white-space: normal;
+    }
 `
 
 export const EnterInformations = styled.span`
@@ -36,12 +55,20 @@ export const EnterInformations = styled.span`
     text-align: left;
     white-space: nowrap;
     z-index: 54;
+    margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
+
+    @media (max-width: 480px) {
+        height: auto;
+        white-space: normal;
+    }
 `
 
 export const InputField = styled.div`
     position: relative;
-    width: 351px;
+    width: 100%;
     height: 68px;
+    margin-top: 0.75rem;
     //overflow: visible auto;
 
 
@@ -96,6 +123,9 @@ export const Input = styled.input`
     outline: none;
     border: 1px solid #c8c8c8;
     border-radius: 8px;
+    padding: 0 12px;
+    font-family: Ruda, sans-serif;
+    color: var(--base-900);
 
 `
 
@@ -132,12 +162,18 @@ export const Button = styled.button`
     gap: ${(props) => props.gap || '4px'};
     position: relative;
     width: ${(props) => props.width || '350px'};
+    max-width: 100%;
     margin: ${(props) => props.margin || '32px 0 0 1px'};
     padding: ${(props) => props.padding || '12px 24px'};
     cursor: pointer;
     background: ${(props) => props.background || '#89937c'};
     border: ${(props) => props.border || 'none'};
     border-radius: 8px;
+    color: #ffffff;
+    font-family: Ruda, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 42px;
 `
 
 // export const TextButton = styled.span`
@@ -155,9 +191,9 @@ export const Button = styled.button`
 
 export const NewAccount = styled.button`
     position: relative;
-    width: 138px;
+    width: auto;
     height: 13px;
-    margin: 31px 0 0 106px;
+    margin: 0;
     font-family: Ruda, sans-serif;
     font-size: 10px;
     font-weight: 400;
@@ -165,6 +201,8 @@ export const NewAccount = styled.button`
     text-align: center;
     text-overflow: initial;
     white-space: nowrap;
+    color: var(--green-600);
+    background: transparent;
 `
 
 
@@ -175,6 +213,7 @@ export const NewAccount = styled.button`
 export const Frame = styled.div`
     width: 544px;
     height: 900px;
+    display: none;
 `
 
 export const Group = styled.div`

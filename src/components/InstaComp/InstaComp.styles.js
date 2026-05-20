@@ -2,13 +2,11 @@ import styled from 'styled-components'
 
 export const Instagram = styled.div`
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: pink;
+    width: 100%;
+    background-color: var(--cream-100);
     background-size: cover;
     background-position: 50% 50%;
-    padding-top: 100px;
-    padding-left: 150px;
+    padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
 
 `
 
@@ -16,15 +14,26 @@ export const  ListOfPost = styled.div`
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
+    gap: 1rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 export const  Post = styled.img`
-    width: 254px;
-    height: 254px;
+    width: 100%;
+    aspect-ratio: 1;
+    height: auto;
     object-fit: cover;
+    border-radius: 28px;
+    box-shadow: var(--drop-2);
 
 `

@@ -5,38 +5,42 @@ import ColdBeverage from 'assets/coldbeverage.png'
 import mediaQuery from 'styles/mediaQuery'
 export const WhereverYouAre3 = styled.div`
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: #000000;
+    width: 100%;
+    background-color: var(--coffee-900);
     background-size: cover;
     background-position: 50% 50%;
+    padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
+    overflow: hidden;
 `
 
 export const ComponentTitle = styled.div`
-    padding: 20px;
+    padding: 0;
     font-family: var(--title-m-semibold-font-family);
     font-weight: var(--title-m-semibold-font-weight);
-    color: var(--basewhite);
-    font-size: var(--title-m-semibold-font-size);
+    color: var(--cream-100);
+    font-size: clamp(1.75rem, 4vw, var(--title-m-semibold-font-size));
     letter-spacing: var(--title-m-semibold-letter-spacing);
     line-height: var(--title-m-semibold-line-height);
     white-space: nowrap;
     font-style: var(--title-m-semibold-font-style);
+
+    ${mediaQuery('mediumHandset', 'max')`
+        white-space: normal;
+    `}
 `
 
 export const Description = styled.div`
-    //background: yellow;
-    width: 1120px;
-    height: 445px;
+    width: min(1120px, 100%);
+    min-height: 445px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 7px;
-    padding-top: 100px;
-    padding-left: 150px;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    margin: 3rem auto 0;
 
-    // ${mediaQuery('mediumHandset')` `}
+    ${mediaQuery('largeTablet', 'max')`
+        grid-template-columns: 1fr;
+    `}
 `
 
 export const GridRow = styled.div`
@@ -47,8 +51,19 @@ export const GridRow = styled.div`
     justify-content: center;
     color: white;
     font-size: 20px;
+    gap: 1rem;
 `
-export const StepDescription = styled.div``
+export const StepDescription = styled.div`
+    width: 100%;
+    padding: 1rem 1.1rem;
+    background: rgba(255, 248, 239, 0.08);
+    border: 1px solid rgba(255, 248, 239, 0.12);
+    border-radius: 22px;
+    color: var(--cream-200);
+    font-family: var(--text-s-regular-font-family);
+    font-size: 0.95rem;
+    line-height: 1.55;
+`
 
 export const Column1 = styled.div`
     height: 100%;
@@ -63,9 +78,12 @@ export const Column3 = styled.div`
 
 `
 export const ColdBeverageImg = styled.div`
-    width: 191px;
-    height: 374px;
+    width: clamp(150px, 42vw, 191px);
+    height: auto;
+    aspect-ratio: 191 / 374;
     background: url(${ColdBeverage});
-    // no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    filter: drop-shadow(0 22px 35px rgba(0, 0, 0, 0.28));
 `

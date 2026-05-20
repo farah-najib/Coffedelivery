@@ -45,13 +45,21 @@ const Header = () => {
     return (
         <HeaderContainer>
             <HeaderLogo href="#home" />
-            <MenuBtn onClick={() => setMenuOpen(!menuOpen)}>
+            <MenuBtn
+                aria-label="Toggle navigation menu"
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
                 <i className="fi fi-br-menu-burger"></i>
             </MenuBtn>
             <NavLinks show={menuOpen}>
                 {navLinks.map((link, index) => (
                     <Link key={index}>
-                        <a href={link.href}>{link.label}</a>
+                        <a
+                            href={link.href}
+                            onClick={() => setMenuOpen(false)}
+                        >
+                            {link.label}
+                        </a>
                     </Link>
                 ))}
             </NavLinks>

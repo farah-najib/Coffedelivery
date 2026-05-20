@@ -3,76 +3,87 @@ import mediaQuery from 'styles/mediaQuery'
 
 export const  HowItWorks = styled.div`
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: #c8aaaa;
+    width: 100%;
+    background-color: var(--cream-200);
     background-size: cover;
     background-position: 50% 50%;
+    padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 5vw, 5rem);
 `
 
 export const  ComponentTitle = styled.div`
-    padding: 20px;
+    padding: 0;
     font-family: var(--title-m-semibold-font-family);
     font-weight: var(--title-m-semibold-font-weight);
-    color: var(--base-900);
-    font-size: var(--title-m-semibold-font-size);
+    color: var(--coffee-900);
+    font-size: clamp(1.75rem, 4vw, var(--title-m-semibold-font-size));
     letter-spacing: var(--title-m-semibold-letter-spacing);
     line-height: var(--title-m-semibold-line-height);
     white-space: nowrap;
     font-style: var(--title-m-semibold-font-style);
+
+    ${mediaQuery('mediumHandset', 'max')`
+        white-space: normal;
+    `}
 `
 export const Content = styled.div`
-    width: 1120px;
-    height: 446px;
+    width: min(1120px, 100%);
+    min-height: 446px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 5px;
-    width: 100%;
-    padding-top: 100px;
-    padding-left: 150px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 3rem auto 0;
 
-    ${mediaQuery('mediumHandset')`
+    ${mediaQuery('largeTablet', 'max')`
 
         display:flex;
         flex-direction:column;
         padding-top: 0px;
         padding-left: 0px;
-        gap:0px;
+        gap:1rem;
         `}
 `
 export const Column = styled.div`
-    ${mediaQuery('mediumHandset')`
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 
-        height:196px
+    ${mediaQuery('mediumHandset', 'max')`
+
+        height:auto
         `}
 `
 
 export const Item = styled.div`
-    width: 352px;
-    height: 196px;
+    width: 100%;
+    min-height: 196px;
     object-fit: cover;
-    color: black;
+    color: var(--coffee-900);
     font-size: 20px;
 
-    ${mediaQuery('mediumHandset')`
+    ${mediaQuery('mediumHandset', 'max')`
 
-    height: 0px;
+    min-height: auto;
        `}
 `
 export const  Card = styled.div`
     background-color: var(--basewhite);
-    border-radius: 16px;
+    border-radius: 28px;
     box-shadow: var(--drop-card);
-    width: 352px;
-    height: 196px;
+    width: 100%;
+    min-height: 196px;
+    padding: 1.5rem;
 `
-export const  CardHeader = styled.div``
+export const  CardHeader = styled.div`
+    img {
+        width: 36px;
+        height: 36px;
+    }
+`
 export const  CardTitle = styled.div`
     font-family: var(--title-m-semibold-font-family);
     font-weight: var(--title-m-semibold-font-weight);
-    color: var(--base-900);
-    font-size: var(--title-m-semibold-font-size);
+    color: var(--coffee-900);
+    font-size: clamp(1.6rem, 3vw, var(--title-m-semibold-font-size));
     letter-spacing: var(--title-m-semibold-letter-spacing);
     line-height: var(--title-m-semibold-line-height);
     font-style: var(--title-m-semibold-font-style);
@@ -81,15 +92,15 @@ export const  CardTitle = styled.div`
 export const  CardBody = styled.div`
     font-family: var(--text-m-regular-font-family);
     font-weight: var(--text-m-regular-font-weight);
-    color: var(--base-600);
+    color: var(--coffee-700);
     font-size: var(--text-m-regular-font-size);
     letter-spacing: var(--text-m-regular-letter-spacing);
     //line-height: var(--text-m-regular-line-height);
     font-style: var(--text-m-regular-font-style);
 `
 export const SpecialItem = styled.div`
-    width: 352px;
-    height: 196px;
+    width: 100%;
+    min-height: 196px;
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
@@ -117,15 +128,15 @@ export const InnerItem = styled.div`
 
 `
 export const Img = styled.img`
-    width: 48px;
-    height: 48px;
+    width: 96px;
+    height: 96px;
 
-    ${mediaQuery('mediumHandset')`
+    ${mediaQuery('mediumHandset', 'max')`
         display:none`}
 `
 
 export const ArrowImg = styled.img`
    
-       ${mediaQuery('mediumHandset')`
+       ${mediaQuery('mediumHandset', 'max')`
         display:none`}
 `
